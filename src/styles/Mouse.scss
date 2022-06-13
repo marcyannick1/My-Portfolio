@@ -1,0 +1,31 @@
+@import "./src/styles/variables.scss";
+
+.circle{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 3px solid $color3;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: .1s ease-out;
+    top: -100%;
+    z-index: 1000;
+}
+.dot{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: $color3;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    top: -100%;
+    z-index: 1000;
+}
+
+@media screen and(max-width:768px) {
+    .cursor{
+        display: none;
+    }
+}

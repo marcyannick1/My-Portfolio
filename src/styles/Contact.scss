@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+main#contact{
+    .container{
+        display: flex;
+        column-gap: 10%;
+        flex-wrap: wrap;
+        .info{
+            h3{
+                font-size: 1.3em;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 10px;
+                span{
+                    font-size: .7em;
+                    font-weight: normal;
+                }
+            }
+            a:not(.social a){
+                display: block;
+                width: max-content;
+                color: black;
+                transition: .2s;
+                &:hover{
+                    color: $color3;
+                }
+            }
+            .social{
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+div.social{
+    a{
+        font-size: 1.5em;
+        color: $color2;
+
+        &:not(last-child){
+            margin-right: 10px;
+        }
+        &:hover{
+            color: $color3;
+            transition: .2s;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+main#home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    h1 {
+        font-size: 3em;
+        color: $color2;
+
+        span:first-child {
+            font-size: 0.6em;
+        }
+        span:last-child a {
+            font-style: italic;
+            color: $color3;
+        }
+    }
+    .stickers {
+        width: 50%;
+        img {
+            height: 85%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: 0.5s ease-out;
+            z-index: -1;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    main{
+        .stickers {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    main#home {
+        height: 85vh;
+    }
+}
+@media screen and (max-width: 575px) {
+    main#home {
+        h1 {
+            font-size: 2.4em;
+        }
+    }
+}
