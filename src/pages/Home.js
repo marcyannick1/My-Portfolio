@@ -10,6 +10,7 @@ class Home extends Component {
     };
     componentDidMount() {
         document.addEventListener("mousemove", this.position);
+        window.scrollTo(0,0)
     }
 
     componentWillUnmount(){

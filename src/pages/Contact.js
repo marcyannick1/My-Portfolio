@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 class Contact extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
     render() {
         return (
             <React.Fragment>

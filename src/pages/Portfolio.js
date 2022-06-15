@@ -4,6 +4,9 @@ import "../styles/Portfolio.scss";
 import Nav from "../components/Nav";
 
 class Portfolio extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
     render() {
         return (
             <React.Fragment>

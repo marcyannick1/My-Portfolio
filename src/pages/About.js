@@ -3,6 +3,9 @@ import "../styles/About.scss";
 import Nav from "../components/Nav";
 
 class About extends Component {
+    componentDidMount(){
+        window.scrollTo(0,0)
+    }
     render() {
         function stickersHidden() {
             const stickerSmile = document.querySelector(".stickersSmiley");
