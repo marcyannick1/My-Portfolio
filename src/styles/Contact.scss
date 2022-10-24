@@ -3,6 +3,7 @@
 main#contact{
     .container{
         display: flex;
+        // justify-content: space-between;
         column-gap: 10%;
         flex-wrap: wrap;
         .info{
@@ -16,7 +17,7 @@ main#contact{
                     font-weight: normal;
                 }
             }
-            a:not(.social a){
+            a:not(.social a, .leaflet-container a){
                 display: block;
                 width: max-content;
                 color: black;

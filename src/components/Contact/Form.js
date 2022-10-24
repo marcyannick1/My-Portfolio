@@ -3,13 +3,12 @@ import emailjs from "@emailjs/browser";
 import "../../styles/Form.scss"
 
 function Form() {
+    // EmailJs
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
+        emailjs.sendForm(
                 "service_92lvc9s",
                 "template_4uhfy2d",
                 form.current,
@@ -34,6 +33,8 @@ function Form() {
             <input name="name" id="name" type="text" className="shadow-sm mouseover"/>
             <label htmlFor="mail" className="mouseover">E-mail*</label>
             <input name="mail" id="mail" type="text" className="shadow-sm mouseover" required/>
+            {/* <label htmlFor="address" className="mouseover">Adresse</label>
+            <input name="address" id="address" type="text" className="shadow-sm mouseover" required/> */}
             <label htmlFor="subject" className="mouseover">Sujet</label>
             <input name="subject" id="subject" type="text" className="shadow-sm mouseover"/>
             <label htmlFor="message" className="mouseover">Message*</label>

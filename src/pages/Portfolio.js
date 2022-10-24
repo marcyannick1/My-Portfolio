@@ -12,7 +12,6 @@ class Portfolio extends Component {
             <React.Fragment>
                 <Nav />
                 <main id="portfolio">
-                    <div></div>
                     <h2>Mon portfolio</h2>
                     <div className="container">
                         <Card

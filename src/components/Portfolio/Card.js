@@ -13,16 +13,16 @@ class Card extends Component {
                 </div>
                 <div className="iconContainer">
                     <div className="tech">
-                        <i class={"fa-brands fa-" + this.props.tech1}></i>
-                        <i class={"fa-brands fa-" + this.props.tech2}></i>
-                        <i class={"fa-brands fa-" + this.props.tech3}></i>
-                        <i class={"fa-brands fa-" + this.props.tech4}></i>
-                        <i class={"fa-brands fa-" + this.props.tech5}></i>
-                        <i class={"fa-brands fa-" + this.props.tech6}></i>
-                        <i class={"fa-brands fa-" + this.props.tech7}></i>
+                        <i className={"fa-brands fa-" + this.props.tech1}></i>
+                        <i className={"fa-brands fa-" + this.props.tech2}></i>
+                        <i className={"fa-brands fa-" + this.props.tech3}></i>
+                        <i className={"fa-brands fa-" + this.props.tech4}></i>
+                        <i className={"fa-brands fa-" + this.props.tech5}></i>
+                        <i className={"fa-brands fa-" + this.props.tech6}></i>
+                        <i className={"fa-brands fa-" + this.props.tech7}></i>
                     </div>
-                    <a href={this.props.link} target="_blank" rel="noreferrer" className={"mouseover " + this.props.title}>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <a href={this.props.link} target="_blank" rel="noreferrer" className="mouseover" id={this.props.title.toLowerCase().replaceAll(" ","-")}>
+                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
             </div>

@@ -10,7 +10,7 @@
     pointer-events: none;
     transition: .1s ease-out;
     top: -100%;
-    z-index: 1000;
+    z-index: 100000;
 }
 .dot{
     position: fixed;
@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     top: -100%;
-    z-index: 1000;
+    z-index: 100000;
 }
 
 @media screen and(max-width:1300px) {

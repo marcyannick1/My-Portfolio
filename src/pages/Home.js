@@ -20,7 +20,7 @@ class Home extends Component {
     position = (e) => {
         const stickers = document.querySelector('main#home img')
         this.setState({ top: e.clientY, left: e.clientX });
-        stickers.style.right = (this.state.left / 80) + "px";
+        stickers.style.right = (this.state.left / 60) + "px";
     };
     render() {
         return (
@@ -47,7 +47,7 @@ class Home extends Component {
                     </div>
                     <div className="stickers">
                         <img
-                            src="images/Stickers.png"
+                            src="images/Stickers2.png"
                             alt="Bitmoji Stickers"
                         />
                     </div>

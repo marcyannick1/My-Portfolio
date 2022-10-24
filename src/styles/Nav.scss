@@ -13,7 +13,7 @@
     padding: 20px;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 100000;
     background-color: #f5f5f5;
     .stickers{
         height: 50px;
@@ -41,7 +41,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 10000;
     min-width: 90px;
     height: 100vh;
     @extend %flex-center;
@@ -54,7 +54,7 @@ nav{
                 flex-direction: column;
                 row-gap: 5px;
                 font-size: .6em;
-                padding: 15px 0;
+                padding: 15px;
                 color: $color1;
                 cursor: pointer;
                 transition: .2s;
@@ -76,7 +76,7 @@ a.active li{
 }
 a{
     &:last-child li{
-        border: 0;
+        border: none;
     }
 }
 
@@ -94,5 +94,10 @@ a{
         @extend %flex-center;
         background-color: $color2;
         border: none;
+    }
+}
+@media screen and (min-width:768px) {
+    nav{
+        display: flex;
     }
 }

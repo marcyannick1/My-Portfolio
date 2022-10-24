@@ -4,10 +4,11 @@ import Social from "../components/Home/Social";
 import "../styles/Contact.scss";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Map from "../components/Contact/Map";
 
 class Contact extends Component {
-    componentDidMount(){
-        window.scrollTo(0,0)
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
     render() {
         return (
@@ -17,6 +18,7 @@ class Contact extends Component {
                     <h2>Contact</h2>
                     <div className="container">
                         <Form />
+                        <Map />
                         <div className="info">
                             <h3>
                                 Marc Yannick COULIBALY

@@ -24,13 +24,13 @@ class Mouse extends Component {
         dot.style.top = this.state.top + "px";
         dot.style.left = this.state.left + "px";
     };
-    visible = (e) => {
+    visible = () => {
         const circle = document.querySelector(".circle");
         const dot = document.querySelector('.dot')
         circle.style.visibility = "visible";
         dot.style.visibility = "visible";
     };
-    hidden = (e) => {
+    hidden = () => {
         const circle = document.querySelector(".circle");
         const dot = document.querySelector('.dot')
         circle.style.visibility = "hidden";

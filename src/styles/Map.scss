@@ -1,0 +1,13 @@
+@import "../styles/variables.scss";
+
+.leaflet{
+    width: 500px;
+    height: 500px;
+    border: 4px solid #e7e7e7;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    .leaflet-container{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 // @tailwind base;
 // @tailwind components;
 @tailwind utilities;
+
 @import "variables.scss";
 
 body {
@@ -33,9 +34,10 @@ main {
     }
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    // position: absolute;
+    // bottom: 0;
+    // left: 50%;
+    text-align: center;
     margin: 20px 0;
     a {
         color: $color3;
