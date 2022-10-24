@@ -16,7 +16,7 @@ class Map extends Component {
                     scrollWheelZoom={true}
                 >
                     <TileLayer
-                        // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
                     />
                     <Marker position={[this.state.lat, this.state.long]}>
