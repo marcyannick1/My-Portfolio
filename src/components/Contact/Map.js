@@ -7,7 +7,9 @@ class Map extends Component {
         lat : 48.92384338378906,
         long : 2.2841646671295166,
     };
+    
     render() {
+        const api_key = process.env.REACT_APP_STADIA_MAPS_API_KEY
         return (
             <div className="leaflet">
                 <MapContainer
@@ -17,7 +19,7 @@ class Map extends Component {
                 >
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=bdb0db00-21ad-4f88-b0fc-3c1ed24acc69"
+                        url={"https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=" + api_key}
                     />
                     <Marker position={[this.state.lat, this.state.long]}>
                         <Popup>

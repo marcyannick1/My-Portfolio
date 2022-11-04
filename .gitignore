@@ -24,3 +24,7 @@ yarn-error.log*
 
 # files
 public/images/Stickers.png
+/.idea
+
+# apikey
+/.env
