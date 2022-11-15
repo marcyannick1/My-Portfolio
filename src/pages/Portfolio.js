@@ -52,6 +52,14 @@ class Portfolio extends Component {
                             tech2="html5"
                             tech3="sass"
                         />
+                        <Card
+                            src="images/Portfolio/EnglishDictionary.jpg"
+                            title="English Dictionary"
+                            link="https://marcyannick1.github.io/English-Dictionary/"
+                            tech1="html5"
+                            tech2="css3-alt"
+                            tech3="js"
+                        />
                     </div>
                 </main>
             </React.Fragment>
