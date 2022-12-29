@@ -20,7 +20,7 @@ class About extends Component {
             stickerWink.classList.add("hidden");
         }
         return (
-            <React.Fragment>
+            <>
                 <Nav />
                 <main id="about">
                     <h2>A propos</h2>
@@ -62,7 +62,7 @@ class About extends Component {
                         <img src="images/Stickers 3.png" alt="Bitmoji Stickers" className="stickers stickersWinky mouseover hidden" onMouseLeave={stickersVisible}/>
                     </div>
                 </main>
-            </React.Fragment>
+            </>
         );
     }
 }

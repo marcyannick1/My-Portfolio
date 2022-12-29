@@ -24,8 +24,8 @@ class Home extends Component {
     };
     render() {
         return (
-            <React.Fragment>
-            <Nav/>
+            <>
+                <Nav/>
                 <main id="home">
                     <div>
                         <h1>
@@ -52,7 +52,7 @@ class Home extends Component {
                         />
                     </div>
                 </main>
-            </React.Fragment>
+            </>
         );
     }
 }

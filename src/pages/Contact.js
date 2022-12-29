@@ -12,7 +12,7 @@ class Contact extends Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Nav />
                 <main id="contact">
                     <h2>Contact</h2>
@@ -45,7 +45,7 @@ class Contact extends Component {
                     </div>
                 </main>
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
