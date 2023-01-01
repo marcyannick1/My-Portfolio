@@ -1,8 +1,6 @@
 @import "./src/styles/variables.scss";
 .circle{
     position: fixed;
-    width: 40px;
-    height: 40px;
     border-radius: 100%;
     border: 3px solid $color3;
     transform: translate(-50%, -50%);
@@ -23,12 +21,12 @@
     z-index: 100000;
 }
 
-@media screen and(max-width:1300px) {
+@media screen and(max-width:1080px) {
     .cursor{
         display: none;
     }
 }
-@media screen and(min-width:1300px) {
+@media screen and(min-width:1080px) {
     *{
         cursor: none !important;
     }

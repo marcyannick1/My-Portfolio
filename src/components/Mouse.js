@@ -7,9 +7,14 @@ class Mouse extends Component {
         left: 0,
     };
     componentDidMount() {
+        const circle = document.querySelector(".circle");
+        circle.style.width = "40px"
+        circle.style.height = "40px"
         document.addEventListener("mousemove", this.position);
         document.addEventListener("mouseenter", this.visible);
         document.addEventListener("mouseleave", this.hidden);
+        document.addEventListener("mousedown", this.mouseDown);
+        document.addEventListener("mouseup", this.mouseUp);
     }
     componentDidUpdate(){
         this.size();
@@ -53,6 +58,17 @@ class Mouse extends Component {
             })
         });
     }
+    mouseDown = ()=>{
+        const circle = document.querySelector(".circle")
+        circle.style.width = +circle.style.width.split('px')[0] - 5 + "px";
+        circle.style.height = +circle.style.height.split('px')[0] - 5 + "px";
+    }
+    mouseUp = ()=>{
+        const circle = document.querySelector(".circle")
+        circle.style.width = +circle.style.width.split('px')[0] + 5 + "px";
+        circle.style.height = +circle.style.height.split('px')[0] + 5 + "px";
+    }
+
     render() {
         return (
             <div className="cursor">
