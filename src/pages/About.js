@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/About.scss";
 import Nav from "../components/Nav";
+import Skills from "../components/About/Skills";
 
 class About extends Component {
     componentDidMount(){
@@ -57,6 +58,7 @@ class About extends Component {
                             >
                                 Voir mon CV
                             </a>
+                            <Skills/>
                         </div>
                         <img src="images/Stickers 2.png" alt="Bitmoji Stickers" className="stickers stickersSmiley mouseover" onMouseEnter={stickersHidden}/>
                         <img src="images/Stickers 3.png" alt="Bitmoji Stickers" className="stickers stickersWinky mouseover hidden" onMouseLeave={stickersVisible}/>

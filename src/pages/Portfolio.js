@@ -5,7 +5,6 @@ import Nav from "../components/Nav";
 import * as Fa from "react-icons/fa";
 import * as Di from "react-icons/di";
 import * as Si from "react-icons/si";
-import * as Tb from "react-icons/tb";
 
 class Portfolio extends Component {
     componentDidMount(){
@@ -23,10 +22,11 @@ class Portfolio extends Component {
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
                         >
-                            <Fa.FaPhp color="#d6d6d6"/>
-                            <Si.SiMysql color="#d6d6d6"/>
-                            <Di.DiJqueryLogo color="#d6d6d6"/>
-                            <Si.SiTailwindcss color="#d6d6d6"/>
+                            <Fa.FaPhp/>
+                            <Si.SiMysql/>
+                            <Di.DiJqueryLogo/>
+                            <Si.SiTailwindcss/>
+                            <Si.SiChartdotjs/>
                         </Card>
 
                         <Card
@@ -34,9 +34,9 @@ class Portfolio extends Component {
                             title="English Dictionary"
                             link="https://marcyannick1.github.io/English-Dictionary/"
                         >
-                            <Tb.TbBrandHtml5 color="#d6d6d6"/>
-                            <Tb.TbBrandCss3 color="#d6d6d6"/>
-                            <Tb.TbBrandJavascript color="#d6d6d6"/>
+                            <Di.DiHtml5/>
+                            <Di.DiCss3Full/>
+                            <Si.SiJavascript size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -44,9 +44,9 @@ class Portfolio extends Component {
                             title="Rock Paper Scisors"
                             link="https://marcyannick1.github.io/Rock-Paper-Scissors/"
                         >
-                            <Tb.TbBrandHtml5 color="#d6d6d6"/>
-                            <Tb.TbBrandCss3 color="#d6d6d6"/>
-                            <Tb.TbBrandJavascript color="#d6d6d6"/>
+                            <Di.DiHtml5/>
+                            <Di.DiCss3Full/>
+                            <Si.SiJavascript size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -54,9 +54,9 @@ class Portfolio extends Component {
                             title="YelpCamp"
                             link="https://marcyannick1.github.io/YelpCamp-Codewell-Challenge/"
                         >
-                            <Tb.TbBrandHtml5 color="#d6d6d6"/>
-                            <Tb.TbBrandCss3 color="#d6d6d6"/>
-                            <Fa.FaBootstrap color="#d6d6d6"/>
+                            <Di.DiHtml5/>
+                            <Di.DiCss3Full/>
+                            <Fa.FaBootstrap/>
                         </Card>
 
                         <Card
@@ -64,8 +64,8 @@ class Portfolio extends Component {
                             title="Huddle Landing Page"
                             link="https://marcyannick1.github.io/Huddle-Landing-Page-FrontEndMentor-Challenge/"
                         >
-                            <Tb.TbBrandHtml5 color="#d6d6d6"/>
-                            <Tb.TbBrandCss3 color="#d6d6d6"/>
+                            <Di.DiHtml5/>
+                            <Di.DiCss3Full/>
                         </Card>
 
                         <Card
@@ -73,18 +73,19 @@ class Portfolio extends Component {
                             title="ChatRoom"
                             link="https://spiritistic-flake.000webhostapp.com/"
                         >
-                            <Fa.FaPhp color="#d6d6d6"/>
-                            <Tb.TbBrandCss3 color="#d6d6d6"/>
-                            <Si.SiMysql color="#d6d6d6"/>
+                            <Fa.FaPhp/>
+                            <Di.DiCss3Full/>
+                            <Si.SiMysql/>
                         </Card>
 
                         <Card
                             src="images/Portfolio/Portfolio.jpg"
                             title="Mon Portfolio"
                         >
-                            <Fa.FaReact color="#d6d6d6"/>
-                            <Fa.FaSass color="#d6d6d6"/>
-                            <Si.SiTailwindcss color="#d6d6d6"/>
+                            <Fa.FaReact/>
+                            <Fa.FaSass/>
+                            <Si.SiTailwindcss/>
+                            <Si.SiLeaflet size={'.8em'}/>
                         </Card>
                     </div>
                 </main>

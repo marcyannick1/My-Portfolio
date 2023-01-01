@@ -18,7 +18,9 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-
+*{
+    // cursor: none !important;
+}
 #root {
     margin-left: 90px;
 }

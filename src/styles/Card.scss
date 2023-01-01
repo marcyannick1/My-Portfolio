@@ -52,8 +52,12 @@
         .tech {
             display: flex;
             gap: 4px;
+            *{
+                margin: auto 0;
+            }
             svg {
                 font-size: 1.8em;
+                color: #d6d6dd;
             }
         }
         i{
