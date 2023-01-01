@@ -1,5 +1,7 @@
 @import "./src/styles/variables.scss";
-
+*{
+    cursor: none !important;
+}
 .circle{
     position: fixed;
     width: 40px;
@@ -25,6 +27,9 @@
 }
 
 @media screen and(max-width:1300px) {
+    *{
+        cursor: auto !important;
+    }
     .cursor{
         display: none;
     }

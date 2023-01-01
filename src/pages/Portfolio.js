@@ -22,11 +22,11 @@ class Portfolio extends Component {
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
                         >
-                            <Fa.FaPhp/>
-                            <Si.SiMysql/>
-                            <Di.DiJqueryLogo/>
-                            <Si.SiTailwindcss/>
-                            <Si.SiChartdotjs/>
+                            <Fa.FaPhp name="PHP"/>
+                            <Si.SiMysql name="MySQL"/>
+                            <Di.DiJqueryLogo name="Jquery"/>
+                            <Si.SiTailwindcss name="TailwindCSS"/>
+                            <Si.SiChartdotjs name="Chart JS"/>
                         </Card>
 
                         <Card
@@ -34,9 +34,9 @@ class Portfolio extends Component {
                             title="English Dictionary"
                             link="https://marcyannick1.github.io/English-Dictionary/"
                         >
-                            <Di.DiHtml5/>
-                            <Di.DiCss3Full/>
-                            <Si.SiJavascript size={'.8em'}/>
+                            <Di.DiHtml5 name="HTML"/>
+                            <Di.DiCss3Full name="CSS"/>
+                            <Si.SiJavascript name="JavaScript" size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -44,9 +44,9 @@ class Portfolio extends Component {
                             title="Rock Paper Scisors"
                             link="https://marcyannick1.github.io/Rock-Paper-Scissors/"
                         >
-                            <Di.DiHtml5/>
-                            <Di.DiCss3Full/>
-                            <Si.SiJavascript size={'.8em'}/>
+                            <Di.DiHtml5 name="HTML"/>
+                            <Di.DiCss3Full name="CSS"/>
+                            <Si.SiJavascript name="JavaScript" size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -54,9 +54,9 @@ class Portfolio extends Component {
                             title="YelpCamp"
                             link="https://marcyannick1.github.io/YelpCamp-Codewell-Challenge/"
                         >
-                            <Di.DiHtml5/>
-                            <Di.DiCss3Full/>
-                            <Fa.FaBootstrap/>
+                            <Di.DiHtml5 name="HTML"/>
+                            <Di.DiCss3Full name="CSS"/>
+                            <Fa.FaBootstrap name="Bootstrap"/>
                         </Card>
 
                         <Card
@@ -64,8 +64,8 @@ class Portfolio extends Component {
                             title="Huddle Landing Page"
                             link="https://marcyannick1.github.io/Huddle-Landing-Page-FrontEndMentor-Challenge/"
                         >
-                            <Di.DiHtml5/>
-                            <Di.DiCss3Full/>
+                            <Di.DiHtml5 name="HTML"/>
+                            <Di.DiCss3Full name="CSS"/>
                         </Card>
 
                         <Card
@@ -73,19 +73,19 @@ class Portfolio extends Component {
                             title="ChatRoom"
                             link="https://spiritistic-flake.000webhostapp.com/"
                         >
-                            <Fa.FaPhp/>
-                            <Di.DiCss3Full/>
-                            <Si.SiMysql/>
+                            <Fa.FaPhp name="PHP"/>
+                            <Di.DiCss3Full name="CSS"/>
+                            <Si.SiMysql name="MySQL"/>
                         </Card>
 
                         <Card
                             src="images/Portfolio/Portfolio.jpg"
                             title="Mon Portfolio"
                         >
-                            <Fa.FaReact/>
-                            <Fa.FaSass/>
-                            <Si.SiTailwindcss/>
-                            <Si.SiLeaflet size={'.8em'}/>
+                            <Fa.FaReact name="React JS"/>
+                            <Fa.FaSass name="SCSS"/>
+                            <Si.SiTailwindcss name="TailwindCSS"/>
+                            <Si.SiLeaflet name="Leaflet JS" size={'.8em'}/>
                         </Card>
                     </div>
                 </main>
