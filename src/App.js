@@ -6,10 +6,12 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Mouse from "./components/Mouse";
+import { Toaster } from "react-hot-toast";
 function App() {
     return (
         <div className="App">
             <Mouse />
+            <Toaster position="bottom-center"/>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />

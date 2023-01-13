@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import toast from 'react-hot-toast';
 import "../../styles/Form.scss"
 
 function Form() {
@@ -16,15 +17,13 @@ function Form() {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
+                    form.current.reset()
+                    toast.success('Votre message a bien été envoyé 😉')
                 },
                 (error) => {
-                    console.log(error.text);
-                }
-            );
-            form.current.reset()
-            
-            alert('Votre Message a bien été envoyé, je vous répondrez le plus rapidement possible😊')
+                    toast.error('Votre message n\'a pas pu être envoyé')
+                },
+            )
     };
 
     return (
