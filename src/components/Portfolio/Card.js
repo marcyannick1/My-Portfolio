@@ -12,7 +12,7 @@ class Card extends Component {
             </div>
         )))
         return (
-            <div className="card shadow-md">
+            <div className="card shadow-lg">
                 <div className="imgContainer mouseover">
                     <div className="title">
                         <h3>{this.props.title}</h3>
@@ -23,9 +23,11 @@ class Card extends Component {
                     <div className="tech">
                         {icons}
                     </div>
+                    {this.props.link &&
                     <a href={this.props.link} target="_blank" rel="noreferrer" className="mouseover" id={this.props.title.toLowerCase().replaceAll(" ","-")}>
                         <i className="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
+                    }
                 </div>
             </div>
         );

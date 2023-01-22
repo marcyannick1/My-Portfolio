@@ -18,6 +18,17 @@ class Portfolio extends Component {
                     <h2>Mon portfolio</h2>
                     <div className="container">
                         <Card
+                            src="images/Portfolio/Translation app dark.png"
+                            title="Translation App"
+                            link = "https://github.com/marcyannick1/Translation-App"
+                        >
+                            <Fa.FaReact name="React JS"/>
+                            <Si.SiVite name="Vite JS" size={'.9em'}/>
+                            <Si.SiTypescript name="Typescript" size={'.9em'}/>
+                            <Si.SiChakraui name="Chakra UI" size={'.9em'}/>
+                        </Card>
+
+                        <Card
                             src="images/Portfolio/weather-app.jpg"
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
