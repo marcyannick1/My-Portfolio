@@ -1,21 +1,21 @@
 import React from 'react';
-import * as Fa from "react-icons/fa";
-import * as Di from "react-icons/di";
-import * as Si from "react-icons/si";
+import {FaReact, FaBootstrap, FaPhp} from "react-icons/fa";
+import {DiHtml5, DiCss3Full, DiJqueryLogo} from "react-icons/di";
+import {SiJavascript, SiTypescript, SiTailwindcss, SiMysql} from "react-icons/si";
 
 const Skills = () => {
     return (
         <div className='skills mt-10 flex flex-wrap gap-2' style={{color:'#0edabf', fontSize:'2.2em'}}>
-            <Di.DiHtml5/>
-            <Di.DiCss3Full/>
-            <Si.SiJavascript size={'.9em'}/>
-            <Si.SiTypescript size={'.9em'}/>
-            <Di.DiJqueryLogo/>
-            <Fa.FaReact/>
-            <Si.SiTailwindcss/>
-            <Fa.FaBootstrap/>
-            <Fa.FaPhp/>
-            <Si.SiMysql/>
+            <DiHtml5/>
+            <DiCss3Full/>
+            <SiJavascript size={'.9em'}/>
+            <SiTypescript size={'.9em'}/>
+            <DiJqueryLogo/>
+            <FaReact/>
+            <SiTailwindcss/>
+            <FaBootstrap/>
+            <FaPhp/>
+            <SiMysql/>
         </div>
     );
 }

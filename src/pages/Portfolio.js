@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Card from "../components/Portfolio/Card";
 import "../styles/Portfolio.scss";
 import Nav from "../components/Nav";
-import * as Fa from "react-icons/fa";
-import * as Di from "react-icons/di";
-import * as Si from "react-icons/si";
+import {FaReact, FaPhp, FaBootstrap, FaSass } from "react-icons/fa";
+import {DiJqueryLogo, DiHtml5, DiCss3Full, SiJavascript} from "react-icons/di";
+import {SiVite, SiTypescript, SiChakraui, SiMysql, SiTailwindcss, SiChartdotjs, SiLeaflet} from "react-icons/si";
 
 class Portfolio extends Component {
     componentDidMount(){
@@ -22,10 +22,10 @@ class Portfolio extends Component {
                             title="Translation App"
                             link = "https://github.com/marcyannick1/Translation-App"
                         >
-                            <Fa.FaReact name="React JS"/>
-                            <Si.SiVite name="Vite JS" size={'.9em'}/>
-                            <Si.SiTypescript name="Typescript" size={'.9em'}/>
-                            <Si.SiChakraui name="Chakra UI" size={'.9em'}/>
+                            <SiVite name="Vite JS" size={'.9em'}/>
+                            <FaReact name="React JS"/>
+                            <SiTypescript name="Typescript" size={'.9em'}/>
+                            <SiChakraui name="Chakra UI" size={'.9em'}/>
                         </Card>
 
                         <Card
@@ -33,11 +33,11 @@ class Portfolio extends Component {
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
                         >
-                            <Fa.FaPhp name="PHP"/>
-                            <Si.SiMysql name="MySQL"/>
-                            <Di.DiJqueryLogo name="Jquery"/>
-                            <Si.SiTailwindcss name="TailwindCSS"/>
-                            <Si.SiChartdotjs name="Chart JS"/>
+                            <SiMysql name="MySQL"/>
+                            <FaPhp name="PHP"/>
+                            <DiJqueryLogo name="Jquery"/>
+                            <SiTailwindcss name="TailwindCSS"/>
+                            <SiChartdotjs name="Chart JS"/>
                         </Card>
 
                         <Card
@@ -45,9 +45,9 @@ class Portfolio extends Component {
                             title="English Dictionary"
                             link="https://marcyannick1.github.io/English-Dictionary/"
                         >
-                            <Di.DiHtml5 name="HTML"/>
-                            <Di.DiCss3Full name="CSS"/>
-                            <Si.SiJavascript name="JavaScript" size={'.8em'}/>
+                            <DiHtml5 name="HTML"/>
+                            <DiCss3Full name="CSS"/>
+                            <SiJavascript name="JavaScript" size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -55,9 +55,9 @@ class Portfolio extends Component {
                             title="Rock Paper Scisors"
                             link="https://marcyannick1.github.io/Rock-Paper-Scissors/"
                         >
-                            <Di.DiHtml5 name="HTML"/>
-                            <Di.DiCss3Full name="CSS"/>
-                            <Si.SiJavascript name="JavaScript" size={'.8em'}/>
+                            <DiHtml5 name="HTML"/>
+                            <DiCss3Full name="CSS"/>
+                            <SiJavascript name="JavaScript" size={'.8em'}/>
                         </Card>
 
                         <Card
@@ -65,9 +65,9 @@ class Portfolio extends Component {
                             title="YelpCamp"
                             link="https://marcyannick1.github.io/YelpCamp-Codewell-Challenge/"
                         >
-                            <Di.DiHtml5 name="HTML"/>
-                            <Di.DiCss3Full name="CSS"/>
-                            <Fa.FaBootstrap name="Bootstrap"/>
+                            <DiHtml5 name="HTML"/>
+                            <DiCss3Full name="CSS"/>
+                            <FaBootstrap name="Bootstrap"/>
                         </Card>
 
                         <Card
@@ -75,8 +75,8 @@ class Portfolio extends Component {
                             title="Huddle Landing Page"
                             link="https://marcyannick1.github.io/Huddle-Landing-Page-FrontEndMentor-Challenge/"
                         >
-                            <Di.DiHtml5 name="HTML"/>
-                            <Di.DiCss3Full name="CSS"/>
+                            <DiHtml5 name="HTML"/>
+                            <DiCss3Full name="CSS"/>
                         </Card>
 
                         <Card
@@ -84,19 +84,19 @@ class Portfolio extends Component {
                             title="ChatRoom"
                             link="https://spiritistic-flake.000webhostapp.com/"
                         >
-                            <Fa.FaPhp name="PHP"/>
-                            <Di.DiCss3Full name="CSS"/>
-                            <Si.SiMysql name="MySQL"/>
+                            <FaPhp name="PHP"/>
+                            <DiCss3Full name="CSS"/>
+                            <SiMysql name="MySQL"/>
                         </Card>
 
                         <Card
                             src="images/Portfolio/Portfolio.jpg"
                             title="Mon Portfolio"
                         >
-                            <Fa.FaReact name="React JS"/>
-                            <Fa.FaSass name="SCSS"/>
-                            <Si.SiTailwindcss name="TailwindCSS"/>
-                            <Si.SiLeaflet name="Leaflet JS" size={'.8em'}/>
+                            <FaReact name="React JS"/>
+                            <FaSass name="SCSS"/>
+                            <SiTailwindcss name="TailwindCSS"/>
+                            <SiLeaflet name="Leaflet JS" size={'.8em'}/>
                         </Card>
                     </div>
                 </main>
