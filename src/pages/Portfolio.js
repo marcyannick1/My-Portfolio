@@ -3,8 +3,8 @@ import Card from "../components/Portfolio/Card";
 import "../styles/Portfolio.scss";
 import Nav from "../components/Nav";
 import {FaReact, FaPhp, FaBootstrap, FaSass } from "react-icons/fa";
-import {DiJqueryLogo, DiHtml5, DiCss3Full, SiJavascript} from "react-icons/di";
-import {SiVite, SiTypescript, SiChakraui, SiMysql, SiTailwindcss, SiChartdotjs, SiLeaflet} from "react-icons/si";
+import {DiJqueryLogo, DiHtml5, DiCss3Full} from "react-icons/di";
+import {SiVite, SiTypescript, SiChakraui, SiMysql, SiTailwindcss, SiChartdotjs, SiLeaflet, SiJavascript} from "react-icons/si";
 
 class Portfolio extends Component {
     componentDidMount(){
@@ -22,8 +22,8 @@ class Portfolio extends Component {
                             title="Translation App"
                             link = "https://github.com/marcyannick1/Translation-App"
                         >
-                            <SiVite name="Vite JS" size={'.9em'}/>
                             <FaReact name="React JS"/>
+                            <SiVite name="Vite JS" size={'.9em'}/>
                             <SiTypescript name="Typescript" size={'.9em'}/>
                             <SiChakraui name="Chakra UI" size={'.9em'}/>
                         </Card>
