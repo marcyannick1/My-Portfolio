@@ -86,6 +86,12 @@ class Nav extends Component {
                                 portfolio
                             </li>
                         </NavLink>
+                        <NavLink to="/Veilles">
+                            <li className="mouseover">
+                                <i class="fa-solid fa-clock"></i>
+                                Veilles Technos
+                            </li>
+                        </NavLink>
                         <NavLink to="/Contact">
                             <li className="mouseover">
                                 <i className="fa-solid fa-address-card"></i>
