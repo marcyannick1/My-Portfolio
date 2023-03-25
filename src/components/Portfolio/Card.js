@@ -30,7 +30,7 @@ class Card extends Component {
             <>
                 {this.state.isOpen 
                 && 
-                <Modal handleClose = {this.handleClose}/>}
+                <Modal handleClose = {this.handleClose} title = {this.props.title}/>}
                 <div className="card shadow-lg">
                     <div className="imgContainer mouseover" onClick={this.handleClick}>
                         <div className="title">
