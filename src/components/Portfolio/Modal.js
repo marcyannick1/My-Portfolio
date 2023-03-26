@@ -1,9 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Modal({ handleClose, title, src }) {
     return (
         <>
-            <div
+            <motion.div
                 style={{
                     width: "100vw",
                     height: "100vh",
@@ -15,8 +16,13 @@ function Modal({ handleClose, title, src }) {
                     left: "0",
                 }}
                 onClick={handleClose}
-            ></div>
-            <div
+                initial = {{opacity: 0}}
+                animate = {{opacity: .5}}
+                transition = {{duration: 0.2}}
+            >
+            </motion.div>
+
+            <motion.div
                 style={{
                     width: "85%",
                     maxWidth: 800,
@@ -25,17 +31,18 @@ function Modal({ handleClose, title, src }) {
                     position: "fixed",
                     left: "50%",
                     top: "50%",
-                    transform: "translate(-50%, -50%)",
                     zIndex: 10000,
                     borderRadius: 8,
                     overflow: "auto",
                 }}
+                initial = {{y : "-45%",x : "-50%",opacity : 0}}
+                animate = {{y : "-50%", x : "-50%",opacity : 1}}
+
             >
+            <div>
                 <div
                     style={{
-                        height: 180,
-                        // WebkitMaskBoxImage:
-                        //     "linear-gradient(0deg,transparent,#141414 50%)",
+                        height: 180
                     }}
                 >
                     <img
@@ -49,9 +56,21 @@ function Modal({ handleClose, title, src }) {
                     ></img>
                 </div>
                 <div style={{ height: "150%", padding: 15 }}>
-                    <h2 style={{fontSize : "1.5em" ,color: "#272727", padding: 0, position : "sticky", top: 0 }}>{title}</h2>
+                    <h2
+                        style={{
+                            fontSize: "1.5em",
+                            color: "#272727",
+                            padding: 0,
+                            position: "sticky",
+                            top: 0,
+                        }}
+                    >
+                        {title}
+                    </h2>
                 </div>
             </div>
+
+            </motion.div>
         </>
     );
 }
