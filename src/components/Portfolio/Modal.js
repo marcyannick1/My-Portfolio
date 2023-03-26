@@ -1,6 +1,6 @@
 import React from "react";
 
-function Modal({ handleClose, title }) {
+function Modal({ handleClose, title, src }) {
     return (
         <>
             <div
@@ -19,7 +19,7 @@ function Modal({ handleClose, title }) {
             <div
                 style={{
                     width: "85%",
-                    maxWidth: 900,
+                    maxWidth: 800,
                     height: 600,
                     background: "white",
                     position: "fixed",
@@ -27,36 +27,30 @@ function Modal({ handleClose, title }) {
                     top: "50%",
                     transform: "translate(-50%, -50%)",
                     zIndex: 10000,
-                    borderRadius: 5,
-                    overflow: "auto"
+                    borderRadius: 8,
+                    overflow: "auto",
                 }}
             >
                 <div
                     style={{
-                        display: "flex",
-                        position: "fixed",
-                        top: 0,
-                        height: 50,
-                        width: "100%",
-                        borderRadius: "5px 5px 0 0",
-                        backgroundColor: "white",
-                        padding: 5,
-                        borderBottom: "3.5px solid #0edabf",
-                        alignItems: "center",
+                        height: 180,
+                        // WebkitMaskBoxImage:
+                        //     "linear-gradient(0deg,transparent,#141414 50%)",
                     }}
                 >
-                    <span>{title}</span>
-                    <i
-                        className="fa-solid fa-xmark mouseover"
-                        onClick={handleClose}
+                    <img
+                        src={src}
+                        alt="#"
                         style={{
-                            color: "gainsboro",
-                            marginLeft: "auto",
-                            fontSize: "1.8em",
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
                         }}
-                    ></i>
+                    ></img>
                 </div>
-                <div style={{ height: "150%" }}></div>
+                <div style={{ height: "150%", padding: 15 }}>
+                    <h2 style={{fontSize : "1.5em" ,color: "#272727", padding: 0, position : "sticky", top: 0 }}>{title}</h2>
+                </div>
             </div>
         </>
     );
