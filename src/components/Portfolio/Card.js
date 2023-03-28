@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/Card.scss";
 import Modal from "./Modal";
+import { motion } from "framer-motion";
 
 class Card extends Component {
     constructor(props) {
@@ -26,13 +27,30 @@ class Card extends Component {
             </div>
         ));
 
+        const item = {
+            hidden: { y: 20, opacity: 0 },
+            visible: {
+                y: 0,
+                opacity: 1,
+            },
+        };
+
         return (
             <>
-                {this.state.isOpen 
-                && 
-                <Modal handleClose={this.handleClose} title={this.props.title} src={this.props.src}/>}
-                <div className="card shadow-lg">
-                    <div className="imgContainer mouseover" onClick={this.handleClick}>
+                {this.state.isOpen && (
+                    <Modal
+                        handleClose={this.handleClose}
+                        title={this.props.title}
+                        src={this.props.src}
+                        link={this.props.link}
+                        technos={icons}
+                    />
+                )}
+                <motion.div className="card shadow-lg" variants={item}>
+                    <div
+                        className="imgContainer mouseover"
+                        onClick={this.handleClick}
+                    >
                         <div className="title">
                             <h3>{this.props.title}</h3>
                         </div>
@@ -54,17 +72,7 @@ class Card extends Component {
                             </a>
                         )}
                     </div>
-                </div>
-                {/* {isOpen && (
-                    <div className="modal">
-                        <div className="modal-content">
-                            <span className="close" onClick={this.handleClose}>
-                                &times;
-                            </span>
-                            <p>{this.props.title}</p>
-                        </div>
-                    </div>
-                )} */}
+                </motion.div>
             </>
         );
     }

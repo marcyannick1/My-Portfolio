@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Modal({ handleClose, title, src }) {
+function Modal({ handleClose, title, src, link, technos }) {
     return (
         <>
             <motion.div
@@ -16,11 +16,10 @@ function Modal({ handleClose, title, src }) {
                     left: "0",
                 }}
                 onClick={handleClose}
-                initial = {{opacity: 0}}
-                animate = {{opacity: .5}}
-                transition = {{duration: 0.2}}
-            >
-            </motion.div>
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                transition={{ duration: 0.2 }}
+            ></motion.div>
 
             <motion.div
                 style={{
@@ -35,41 +34,41 @@ function Modal({ handleClose, title, src }) {
                     borderRadius: 8,
                     overflow: "auto",
                 }}
-                initial = {{y : "-45%",x : "-50%",opacity : 0}}
-                animate = {{y : "-50%", x : "-50%",opacity : 1}}
-
+                initial={{ y: "-45%", x: "-50%", opacity: 0 }}
+                animate={{ y: "-50%", x: "-50%", opacity: 1 }}
             >
-            <div>
-                <div
-                    style={{
-                        height: 180
-                    }}
-                >
-                    <img
-                        src={src}
-                        alt="#"
+                <div>
+                    <div
                         style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                        }}
-                    ></img>
-                </div>
-                <div style={{ height: "150%", padding: 15 }}>
-                    <h2
-                        style={{
-                            fontSize: "1.5em",
-                            color: "#272727",
-                            padding: 0,
-                            position: "sticky",
-                            top: 0,
+                            height: 180,
                         }}
                     >
-                        {title}
-                    </h2>
+                        <img
+                            src={src}
+                            alt="#"
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                            }}
+                        ></img>
+                    </div>
+                    <div style={{ padding: 15 }}>
+                        <h2
+                            style={{
+                                fontSize: "1.5em",
+                                color: "#272727",
+                                padding: 0,
+                                position: "sticky",
+                                top: 0,
+                            }}
+                        >
+                            {title}
+                        </h2>
+                        {link && <a href={link}>Voir le site</a>}
+                        <div className="tech">{technos}</div>
+                    </div>
                 </div>
-            </div>
-
             </motion.div>
         </>
     );
