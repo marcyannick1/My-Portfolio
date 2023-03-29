@@ -7,6 +7,7 @@ class Home extends Component {
     state = {
         top: 0,
         left: 0,
+        stickers : Math.floor(Math.random() * 10)
     };
     componentDidMount() {
         document.addEventListener("mousemove", this.position);
@@ -47,7 +48,7 @@ class Home extends Component {
                     </div>
                     <div className="stickers">
                         <img
-                            src="images/Stickers2.png"
+                            src={"images/Home/Stickers" + this.state.stickers + ".png"}
                             alt="Bitmoji Stickers"
                         />
                     </div>
