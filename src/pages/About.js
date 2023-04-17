@@ -24,7 +24,7 @@ class About extends Component {
             <>
                 <Nav />
                 <main id="about">
-                    <h2>A propos</h2>
+                    <h2>À propos</h2>
                     <div className="container">
                         <div className="paragraph">
                             <p>

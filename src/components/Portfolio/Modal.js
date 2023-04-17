@@ -53,20 +53,65 @@ function Modal({ handleClose, title, src, link, technos }) {
                             }}
                         ></img>
                     </div>
-                    <div style={{ padding: 15 }}>
-                        <h2
-                            style={{
-                                fontSize: "1.5em",
-                                color: "#272727",
-                                padding: 0,
-                                position: "sticky",
-                                top: 0,
-                            }}
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            padding: 20,
+                            gap: 20,
+                        }}
+                    >
+                        <div>
+                            <h2
+                                style={{
+                                    fontSize: "1.5em",
+                                    color: "#272727",
+                                    padding: 0,
+                                    position: "sticky",
+                                    top: 0,
+                                }}
+                            >
+                                {title}
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Proin nisi dui, fermentum vel
+                                lectus at, facilisis porta leo. Vivamus auctor
+                                odio ac sollicitudin ullamcorper. Aliquam a
+                                purus nec diam commodo ornare. Mauris
+                                sollicitudin sapien augue, sed volutpat massa
+                                placerat ut. Sed pharetra sodales leo eu ornare.
+                                Etiam enim justo, lobortis ac turpis non,
+                                aliquet varius turpis. <br/>
+                                Proin sed ante tincidunt,
+                                tincidunt leo volutpat, blandit risus. Phasellus
+                                porttitor fringilla purus non vestibulum. Mauris
+                                fermentum eleifend felis a pulvinar.
+                            </p>
+                        </div>
+                        <div
+                            style={{ display: "flex", flexDirection: "column" }}
                         >
-                            {title}
-                        </h2>
-                        {link && <a href={link}>Voir le site</a>}
-                        <div className="tech">{technos}</div>
+                            <div>
+                                <span>Contributeurs:</span>
+                                <p>Marc Yannick</p>
+                            </div>
+                            <div>
+                                <span>Technologies:</span>
+                                {technos}
+                            </div>
+                            {link && (
+                                <a
+                                    href={link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="mouseover"
+                                >
+                                    Voir le site
+                                </a>
+                            )}
+                            <i class="fa-solid fa-up-right"></i>
+                        </div>
                     </div>
                 </div>
             </motion.div>
