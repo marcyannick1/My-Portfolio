@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "../../styles/Modal.scss";
 
 function Modal({ handleClose, title, src, link, technos }) {
     return (
@@ -32,7 +33,7 @@ function Modal({ handleClose, title, src, link, technos }) {
                     top: "50%",
                     zIndex: 10000,
                     borderRadius: 8,
-                    overflow: "auto",
+                    // overflow: "auto",
                 }}
                 initial={{ y: "-45%", x: "-50%", opacity: 0 }}
                 animate={{ y: "-50%", x: "-50%", opacity: 1 }}
@@ -40,7 +41,7 @@ function Modal({ handleClose, title, src, link, technos }) {
                 <div>
                     <div
                         style={{
-                            height: 180,
+                            height: 250,
                         }}
                     >
                         <img
@@ -57,7 +58,7 @@ function Modal({ handleClose, title, src, link, technos }) {
                         style={{
                             display: "flex",
                             justifyContent: "space-between",
-                            padding: 20,
+                            padding: "20px 35px",
                             gap: 20,
                         }}
                     >
@@ -82,23 +83,25 @@ function Modal({ handleClose, title, src, link, technos }) {
                                 sollicitudin sapien augue, sed volutpat massa
                                 placerat ut. Sed pharetra sodales leo eu ornare.
                                 Etiam enim justo, lobortis ac turpis non,
-                                aliquet varius turpis. <br/>
-                                Proin sed ante tincidunt,
-                                tincidunt leo volutpat, blandit risus. Phasellus
-                                porttitor fringilla purus non vestibulum. Mauris
-                                fermentum eleifend felis a pulvinar.
+                                aliquet varius turpis. <br />
+                                Proin sed ante tincidunt, tincidunt leo
+                                volutpat, blandit risus. Phasellus porttitor
+                                fringilla purus non vestibulum. Mauris fermentum
+                                eleifend felis a pulvinar.
                             </p>
                         </div>
                         <div
-                            style={{ display: "flex", flexDirection: "column" }}
+                            style={{ display: "flex", flexDirection: "column", gap : 10 }}
                         >
                             <div>
                                 <span>Contributeurs:</span>
-                                <p>Marc Yannick</p>
+                                <p style={{width: "max-content",color :"#d6d6dd"}}>Marc Yannick Coulibaly</p>
+                                <p style={{width: "max-content",color :"#d6d6dd"}}>Rufus Mouakassa</p>
+                                <p style={{width: "max-content",color :"#d6d6dd"}}>Galdy Diazinga</p>
                             </div>
-                            <div>
+                            <div className="modal-tech">
                                 <span>Technologies:</span>
-                                {technos}
+                                <div>{technos}</div>
                             </div>
                             {link && (
                                 <a

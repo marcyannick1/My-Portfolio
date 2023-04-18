@@ -7,26 +7,26 @@ class Home extends Component {
     state = {
         top: 0,
         left: 0,
-        stickers : Math.floor(Math.random() * 10)
+        stickers: Math.floor(Math.random() * 10),
     };
     componentDidMount() {
         document.addEventListener("mousemove", this.position);
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0);
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         document.removeEventListener("mousemove", this.position);
     }
 
     position = (e) => {
-        const stickers = document.querySelector('main#home img')
+        const stickers = document.querySelector("main#home img");
         this.setState({ top: e.clientY, left: e.clientX });
-        stickers.style.right = (this.state.left / 60) + "px";
+        stickers.style.right = this.state.left / 60 + "px";
     };
     render() {
         return (
             <>
-                <Nav/>
+                <Nav />
                 <main id="home">
                     <div>
                         <h1>
@@ -48,7 +48,11 @@ class Home extends Component {
                     </div>
                     <div className="stickers">
                         <img
-                            src={"images/Home/Stickers" + this.state.stickers + ".png"}
+                            src={
+                                "images/Home/Stickers" +
+                                this.state.stickers +
+                                ".png"
+                            }
                             alt="Bitmoji Stickers"
                         />
                     </div>
