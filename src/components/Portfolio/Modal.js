@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/Modal.scss";
 
-function Modal({ handleClose, title, src, link, technos }) {
+function Modal({ handleClose, title, src, link, technos, description, contributors }) {
     return (
         <>
             <motion.div
@@ -58,7 +58,7 @@ function Modal({ handleClose, title, src, link, technos }) {
                         style={{
                             display: "flex",
                             justifyContent: "space-between",
-                            padding: "20px 35px",
+                            padding: "20px 25px",
                             gap: 20,
                         }}
                     >
@@ -74,30 +74,14 @@ function Modal({ handleClose, title, src, link, technos }) {
                             >
                                 {title}
                             </h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Proin nisi dui, fermentum vel
-                                lectus at, facilisis porta leo. Vivamus auctor
-                                odio ac sollicitudin ullamcorper. Aliquam a
-                                purus nec diam commodo ornare. Mauris
-                                sollicitudin sapien augue, sed volutpat massa
-                                placerat ut. Sed pharetra sodales leo eu ornare.
-                                Etiam enim justo, lobortis ac turpis non,
-                                aliquet varius turpis. <br />
-                                Proin sed ante tincidunt, tincidunt leo
-                                volutpat, blandit risus. Phasellus porttitor
-                                fringilla purus non vestibulum. Mauris fermentum
-                                eleifend felis a pulvinar.
-                            </p>
+                            {description}
                         </div>
                         <div
                             style={{ display: "flex", flexDirection: "column", gap : 10 }}
                         >
                             <div>
                                 <span>Contributeurs:</span>
-                                <p style={{width: "max-content",color :"#d6d6dd"}}>Marc Yannick Coulibaly</p>
-                                <p style={{width: "max-content",color :"#d6d6dd"}}>Rufus Mouakassa</p>
-                                <p style={{width: "max-content",color :"#d6d6dd"}}>Galdy Diazinga</p>
+                                {contributors}
                             </div>
                             <div className="modal-tech">
                                 <span>Technologies:</span>
@@ -109,6 +93,7 @@ function Modal({ handleClose, title, src, link, technos }) {
                                     target="_blank"
                                     rel="noreferrer"
                                     className="mouseover"
+                                    style={{color : "#0edabf"}}
                                 >
                                     Voir le site
                                 </a>
