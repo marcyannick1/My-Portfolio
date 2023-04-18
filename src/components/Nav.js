@@ -71,13 +71,25 @@ class Nav extends Component {
                         </NavLink>
                         <NavLink to="/About">
                             <li className="mouseover">
-                                <i className="fa-solid fa-user"></i>A propos
+                                <i className="fa-solid fa-user"></i>À propos
+                            </li>
+                        </NavLink>
+                        <NavLink to="/Bts-sio">
+                            <li className="mouseover">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                BTS SIO
                             </li>
                         </NavLink>
                         <NavLink to="/Portfolio">
                             <li className="mouseover">
                                 <i className="fa-solid fa-laptop-code"></i>Mon
                                 portfolio
+                            </li>
+                        </NavLink>
+                        <NavLink to="/Veilles">
+                            <li className="mouseover">
+                                <i class="fa-solid fa-clock"></i>
+                                Veilles Technos
                             </li>
                         </NavLink>
                         <NavLink to="/Contact">

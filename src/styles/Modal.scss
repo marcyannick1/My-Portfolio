@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+.modal-tech {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    * {
+        margin: auto 0;
+        transition: 0.1s;
+    }
+    div {
+        display: flex;
+        gap: 8px;
+        div {
+            position: relative;
+            span {
+                position: absolute;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $color3;
+                border-radius: 2px;
+                color: white;
+                padding: 5px 8px;
+                width: max-content;
+                font-size: 0.9em;
+                font-weight: 500;
+                opacity: 0;
+            }
+            svg {
+                font-size: 1.5em;
+                color: #d6d6dd;
+            }
+            &:hover {
+                span {
+                    opacity: 0.9;
+                }
+                svg {
+                    color: $color3;
+                }
+            }
+        }
+    }
+}
