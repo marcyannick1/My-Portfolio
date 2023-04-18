@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Mouse from "./components/Mouse";
 import { Toaster } from "react-hot-toast";
+import Epreuves from "./pages/Epreuves";
 import Veilles from "./pages/Veilles";
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/About" element={<About />} />
                     <Route path="/Bts-sio" element={<Bts />} />
                     <Route path="/Portfolio" element={<Portfolio />} />
+                    <Route path="/Epreuves" element={<Epreuves />} />
                     <Route path="/Veilles" element={<Veilles />} />
                     <Route path="/Contact" element={<Contact />} />
                 </Routes>
