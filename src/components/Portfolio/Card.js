@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../../styles/Card.scss";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
-import * as ModalsContent from "../Portfolio/Modal contents/modalsContent";
 
 class Card extends Component {
     constructor(props) {
@@ -45,8 +44,8 @@ class Card extends Component {
                         src={this.props.src}
                         link={this.props.link}
                         technos={icons}
-                        description={ModalsContent.monPortfolio.description}
-                        contributors={ModalsContent.monPortfolio.contributors}
+                        description={this.props.description}
+                        contributors={this.props.contributors}
                     />
                 )}
                 <motion.div className="card shadow-lg" variants={item}>

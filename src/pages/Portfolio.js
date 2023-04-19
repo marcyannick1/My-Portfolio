@@ -15,6 +15,7 @@ import {
     SiJavascript,
 } from "react-icons/si";
 import { motion } from "framer-motion";
+import * as ModalsContent from "../components/Portfolio/Modal contents/modalsContent";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -59,6 +60,8 @@ class Portfolio extends Component {
                             src="images/Portfolio/weather-app.jpg"
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
+                            description={ModalsContent.weatherApp.description}
+                            contributors={ModalsContent.weatherApp.contributors}
                         >
                             <SiMysql name="MySQL" />
                             <FaPhp name="PHP" />
