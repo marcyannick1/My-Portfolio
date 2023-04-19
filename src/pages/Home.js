@@ -44,7 +44,7 @@ class Home extends Component {
                                         visible: (i) => ({
                                             y: 0,
                                             transition: {
-                                                delay: i * 0.08,
+                                                delay: i * 0.1,
                                             },
                                         }),
                                     }}
@@ -60,7 +60,7 @@ class Home extends Component {
                                         visible: (i) => ({
                                             y: 0,
                                             transition: {
-                                                delay: i * 0.08,
+                                                delay: i * 0.06,
                                             },
                                         }),
                                     }}
