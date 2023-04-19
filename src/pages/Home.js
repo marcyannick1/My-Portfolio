@@ -44,7 +44,7 @@ class Home extends Component {
                                         visible: (i) => ({
                                             y: 0,
                                             transition: {
-                                                delay: i * 0.1,
+                                                delay: i * 0.3,
                                             },
                                         }),
                                     }}
@@ -60,7 +60,7 @@ class Home extends Component {
                                         visible: (i) => ({
                                             y: 0,
                                             transition: {
-                                                delay: i * 0.06,
+                                                delay: i * 0.1 ,
                                             },
                                         }),
                                     }}
@@ -87,14 +87,19 @@ class Home extends Component {
                         </h1> */}
                         <Social />
                     </div>
-                    <div className="stickers">
-                        <img
+                    <div
+                        className="stickers"
+                    >
+                        <motion.img
                             src={
                                 "images/Home/Stickers" +
                                 this.state.stickers +
                                 ".png"
                             }
                             alt="Bitmoji Stickers"
+                            initial={{ opacity : 0}}
+                            animate={{ opacity : 1 }}
+                            transition={{ duration: .8}}
                         />
                     </div>
                 </main>
