@@ -2,7 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/Modal.scss";
 
-function Modal({ handleClose, title, src, link, technos, description, contributors }) {
+function Modal({
+    handleClose,
+    title,
+    src,
+    link,
+    technos,
+    description,
+    contributors,
+}) {
     return (
         <>
             <motion.div
@@ -33,7 +41,7 @@ function Modal({ handleClose, title, src, link, technos, description, contributo
                     top: "50%",
                     zIndex: 10000,
                     borderRadius: 8,
-                    // overflow: "auto",
+                    overflow: "auto",
                 }}
                 initial={{ y: "-45%", x: "-50%", opacity: 0 }}
                 animate={{ y: "-50%", x: "-50%", opacity: 1 }}
@@ -70,35 +78,44 @@ function Modal({ handleClose, title, src, link, technos, description, contributo
                                     padding: 0,
                                     position: "sticky",
                                     top: 0,
+                                    backgroundColor : "#FFFFFF",
+                                    marginBottom : 15
                                 }}
                             >
                                 {title}
                             </h2>
                             {description}
                         </div>
-                        <div
-                            style={{ display: "flex", flexDirection: "column", gap : 10 }}
-                        >
-                            <div>
-                                <span>Contributeurs:</span>
-                                {contributors}
+                        <div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 10,
+                                    position: "sticky",
+                                    top: 0,
+                                }}
+                            >
+                                <div>
+                                    <span>Contributeurs:</span>
+                                    {contributors}
+                                </div>
+                                <div className="modal-tech">
+                                    <span>Technologies:</span>
+                                    <div>{technos}</div>
+                                </div>
+                                {link && (
+                                    <a
+                                        href={link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="mouseover"
+                                        style={{ color: "#0edabf" }}
+                                    >
+                                        Voir le site
+                                    </a>
+                                )}
                             </div>
-                            <div className="modal-tech">
-                                <span>Technologies:</span>
-                                <div>{technos}</div>
-                            </div>
-                            {link && (
-                                <a
-                                    href={link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="mouseover"
-                                    style={{color : "#0edabf"}}
-                                >
-                                    Voir le site
-                                </a>
-                            )}
-                            <i class="fa-solid fa-up-right"></i>
                         </div>
                     </div>
                 </div>
