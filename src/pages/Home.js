@@ -66,25 +66,10 @@ class Home extends Component {
                                     }}
                                 >
                                     Je suis Marc Yannick, étudiant en
-                                    <span>BTS SIO SLAM</span>
+                                    <span style={{color : "#0edabf"}}>BTS SIO SLAM</span>
                                 </TextAnimate>
                             </h1>
                         </motion.div>
-                        {/* <h1>
-                            <span>Bienvenue ! 👋</span>
-                            <br />
-                            Je suis Marc Yannick, étudiant en{" "}
-                            <span className="mouseover">
-                                <a
-                                    href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    {" "}
-                                    BTS SIO SLAM
-                                </a>
-                            </span>
-                        </h1> */}
                         <Social />
                     </div>
                     <div
