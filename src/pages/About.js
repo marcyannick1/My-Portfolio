@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import "../styles/About.scss";
 import Nav from "../components/Nav";
 import Skills from "../components/About/Skills";
+import { TextAnimate } from "../components/Home/TextAnimate";
 
 class About extends Component {
-    componentDidMount(){
-        window.scrollTo(0,0)
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
     render() {
         function stickersHidden() {
@@ -24,7 +25,22 @@ class About extends Component {
             <>
                 <Nav />
                 <main id="about">
-                    <h2>A propos</h2>
+                    <h2>
+                        <TextAnimate
+                            initial={{ y: "100%" }}
+                            animate="visible"
+                            variants={{
+                                visible: (i) => ({
+                                    y: 0,
+                                    transition: {
+                                        delay: i * 0.1,
+                                    },
+                                }),
+                            }}
+                        >
+                            À propos
+                        </TextAnimate>
+                    </h2>
                     <div className="container">
                         <div className="paragraph">
                             <p>
@@ -58,10 +74,20 @@ class About extends Component {
                             >
                                 Voir mon CV
                             </a>
-                            <Skills/>
+                            <Skills />
                         </div>
-                        <img src="images/Stickers 2.png" alt="Bitmoji Stickers" className="stickers stickersSmiley mouseover" onMouseEnter={stickersHidden}/>
-                        <img src="images/Stickers 3.png" alt="Bitmoji Stickers" className="stickers stickersWinky mouseover hidden" onMouseLeave={stickersVisible}/>
+                        <img
+                            src="images/Stickers 2.png"
+                            alt="Bitmoji Stickers"
+                            className="stickers stickersSmiley mouseover"
+                            onMouseEnter={stickersHidden}
+                        />
+                        <img
+                            src="images/Stickers 3.png"
+                            alt="Bitmoji Stickers"
+                            className="stickers stickersWinky mouseover hidden"
+                            onMouseLeave={stickersVisible}
+                        />
                     </div>
                 </main>
             </>
