@@ -26,17 +26,6 @@ class Portfolio extends Component {
     }
 
     render() {
-        const container = {
-            hidden: { opacity: 1, scale: 0 },
-            visible: {
-                opacity: 1,
-                scale: 1,
-                transition: {
-                    delayChildren: 0.2,
-                    staggerChildren: 0.2,
-                },
-            },
-        };
         return (
             <>
                 <Nav />
@@ -152,7 +141,7 @@ class Portfolio extends Component {
                             <SiTailwindcss name="TailwindCSS" />
                             <SiLeaflet name="Leaflet JS" size={".8em"} />
                         </Card>
-                    </motion.div>
+                    </ContainerAnimate>
                 </main>
             </>
         );

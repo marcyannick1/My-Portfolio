@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Social from "../components/Home/Social";
 import "../styles/Home.scss";
 import Nav from "../components/Nav";
+import { TextAnimate } from "../components/Home/TextAnimate";
+import { motion } from "framer-motion";
 
 class Home extends Component {
     state = {
@@ -29,31 +31,60 @@ class Home extends Component {
                 <Nav />
                 <main id="home">
                     <div>
-                        <h1>
-                            <span>Bienvenue ! 👋</span>
-                            <br />
-                            Je suis Marc Yannick, étudiant en{" "}
-                            <span className="mouseover">
-                                <a
-                                    href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
-                                    target="_blank"
-                                    rel="noreferrer"
+                        <motion.div
+                            initial={{ opacity: 1 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                        >
+                            <h1>
+                                <TextAnimate
+                                    initial={{ y: "100%" }}
+                                    animate="visible"
+                                    variants={{
+                                        visible: (i) => ({
+                                            y: 0,
+                                            transition: {
+                                                delay: i * 0.3,
+                                            },
+                                        }),
+                                    }}
+                                    ownStyle={{ fontSize: ".7em" }}
                                 >
-                                    {" "}
-                                    BTS SIO SLAM
-                                </a>
-                            </span>
-                        </h1>
+                                    Bienvenue ! 👋
+                                </TextAnimate>
+                                <br />
+                                <TextAnimate
+                                    initial={{ y: "100%" }}
+                                    animate="visible"
+                                    variants={{
+                                        visible: (i) => ({
+                                            y: 0,
+                                            transition: {
+                                                delay: i * 0.1 ,
+                                            },
+                                        }),
+                                    }}
+                                >
+                                    Je suis Marc Yannick, étudiant en
+                                    <span style={{color : "#0edabf"}}>BTS SIO SLAM</span>
+                                </TextAnimate>
+                            </h1>
+                        </motion.div>
                         <Social />
                     </div>
-                    <div className="stickers">
-                        <img
+                    <div
+                        className="stickers"
+                    >
+                        <motion.img
                             src={
                                 "images/Home/Stickers" +
                                 this.state.stickers +
                                 ".png"
                             }
                             alt="Bitmoji Stickers"
+                            initial={{ opacity : 0}}
+                            animate={{ opacity : 1 }}
+                            transition={{ duration: .8}}
                         />
                     </div>
                 </main>

@@ -35,6 +35,6 @@ const Skills = () => {
             <SiPrisma size={".9em"}/>
         </motion.div>
     );
-}
+};
 
 export default Skills;
