@@ -30,8 +30,8 @@ class Portfolio extends Component {
                 opacity: 1,
                 scale: 1,
                 transition: {
-                    delayChildren: 0.2,
-                    staggerChildren: 0.2,
+                    delayChildren: .4,
+                    staggerChildren: .2,
                 },
             },
         };
