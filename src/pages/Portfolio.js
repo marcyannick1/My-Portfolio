@@ -13,8 +13,12 @@ import {
     SiChartdotjs,
     SiLeaflet,
     SiJavascript,
+    SiNextdotjs,
+    SiPrisma
 } from "react-icons/si";
-import { motion } from "framer-motion";
+import { BsStripe } from "react-icons/bs";
+import { TextAnimate } from "../components/Home/TextAnimate";
+import ContainerAnimate from "../components/Portfolio/ContainerAnimate";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -37,13 +41,36 @@ class Portfolio extends Component {
             <>
                 <Nav />
                 <main id="portfolio">
-                    <h2>Mon portfolio</h2>
-                    <motion.div
-                        className="container"
-                        variants={container}
-                        initial = "hidden"
-                        animate = "visible"
-                    >
+                    <h2>
+                        <TextAnimate
+                            initial={{ y: "100%" }}
+                            animate="visible"
+                            variants={{
+                                visible: (i) => ({
+                                    y: 0,
+                                    transition: {
+                                        delay: i * 0.1,
+                                    },
+                                }),
+                            }}
+                        >
+                            Mon Portfolio
+                        </TextAnimate>
+                    </h2>
+                    <ContainerAnimate delayChildren={.4} staggerChildren={.2} className="container">
+                        <Card
+                            src="images/Portfolio/localhost_3000_ (2).png"
+                            title="Crypto Pay"
+                            link="https://github.com/marcyannick1/Translation-App"
+                        >
+                            <SiNextdotjs name="Next JS" />
+                            <SiTypescript name="Typescript" size={".9em"} />
+                            <SiChakraui name="Chakra UI" size={".9em"} />
+                            <SiPrisma name="Prisma"/>
+                            <SiChartdotjs name="Chart JS" />
+                            <BsStripe name="Stripe" size={".9em"}/>
+                        </Card>
+
                         <Card
                             src="images/Portfolio/Translation app dark.png"
                             title="Translation App"
