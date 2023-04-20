@@ -14,8 +14,8 @@ import {
     SiLeaflet,
     SiJavascript,
 } from "react-icons/si";
-import { motion } from "framer-motion";
 import { TextAnimate } from "../components/Home/TextAnimate";
+import ContainerAnimate from "../components/Portfolio/ContainerAnimate";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -23,17 +23,6 @@ class Portfolio extends Component {
     }
 
     render() {
-        const container = {
-            hidden: { opacity: 1, scale: 0 },
-            visible: {
-                opacity: 1,
-                scale: 1,
-                transition: {
-                    delayChildren: 0.2,
-                    staggerChildren: 0.2,
-                },
-            },
-        };
         return (
             <>
                 <Nav />
@@ -54,12 +43,7 @@ class Portfolio extends Component {
                             Mon Portfolio
                         </TextAnimate>
                     </h2>
-                    <motion.div
-                        className="container"
-                        variants={container}
-                        initial="hidden"
-                        animate="visible"
-                    >
+                    <ContainerAnimate delayChildren={.4} staggerChildren={.2} className="container">
                         <Card
                             src="images/Portfolio/Translation app dark.png"
                             title="Translation App"
@@ -141,7 +125,7 @@ class Portfolio extends Component {
                             <SiTailwindcss name="TailwindCSS" />
                             <SiLeaflet name="Leaflet JS" size={".8em"} />
                         </Card>
-                    </motion.div>
+                    </ContainerAnimate>
                 </main>
             </>
         );
