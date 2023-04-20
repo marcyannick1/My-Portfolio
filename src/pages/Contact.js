@@ -5,6 +5,7 @@ import "../styles/Contact.scss";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Map from "../components/Contact/Map";
+import { TextAnimate } from "../components/Home/TextAnimate";
 
 class Contact extends Component {
     componentDidMount() {
@@ -15,7 +16,22 @@ class Contact extends Component {
             <>
                 <Nav />
                 <main id="contact">
-                    <h2>Contact</h2>
+                    <h2>
+                        <TextAnimate
+                            initial={{ y: "100%" }}
+                            animate="visible"
+                            variants={{
+                                visible: (i) => ({
+                                    y: 0,
+                                    transition: {
+                                        delay: i * 0.1,
+                                    },
+                                }),
+                            }}
+                        >
+                            Contact
+                        </TextAnimate>
+                    </h2>
                     <div className="container">
                         <Form />
                         <Map />

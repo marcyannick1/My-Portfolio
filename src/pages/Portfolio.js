@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import * as ModalsContent from "../components/Portfolio/Modal contents/modalsContent";
+import { TextAnimate } from "../components/Home/TextAnimate";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -38,12 +39,27 @@ class Portfolio extends Component {
             <>
                 <Nav />
                 <main id="portfolio">
-                    <h2>Mon portfolio</h2>
+                    <h2>
+                        <TextAnimate
+                            initial={{ y: "100%" }}
+                            animate="visible"
+                            variants={{
+                                visible: (i) => ({
+                                    y: 0,
+                                    transition: {
+                                        delay: i * 0.1,
+                                    },
+                                }),
+                            }}
+                        >
+                            Mon Portfolio
+                        </TextAnimate>
+                    </h2>
                     <motion.div
                         className="container"
                         variants={container}
-                        initial = "hidden"
-                        animate = "visible"
+                        initial="hidden"
+                        animate="visible"
                     >
                         <Card
                             src="images/Portfolio/Translation app dark.png"
