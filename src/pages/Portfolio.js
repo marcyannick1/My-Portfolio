@@ -48,7 +48,7 @@ class Portfolio extends Component {
                     </h2>
                     <ContainerAnimate delayChildren={.4} staggerChildren={.2} className="container">
                         <Card
-                            src="images/Portfolio/localhost_3000_ (2).png"
+                            src="images/Portfolio/CryptoPay.png"
                             title="Crypto Pay"
                             link="https://github.com/marcyannick1/Translation-App"
                         >
