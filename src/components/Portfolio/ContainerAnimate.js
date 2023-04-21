@@ -6,6 +6,7 @@ export default function ContainerAnimate({
     delayChildren,
     staggerChildren,
     className,
+    style
 }) {
     const container = {
         hidden: { opacity: 0, scale: 0 },
@@ -24,6 +25,7 @@ export default function ContainerAnimate({
             initial="hidden"
             animate="visible"
             className={className}
+            style={style}
         >
             {children}
         </motion.div>
