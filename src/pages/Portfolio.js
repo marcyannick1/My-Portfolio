@@ -48,7 +48,7 @@ class Portfolio extends Component {
                         </TextAnimate>
                     </h2>
                     <ContainerAnimate delayChildren={.4} staggerChildren={.2} className="container">
-                        <Card
+                        {/* <Card
                             src="images/Portfolio/CryptoPay.png"
                             title="Crypto Pay"
                             link="https://github.com/marcyannick1/Translation-App"
@@ -59,7 +59,7 @@ class Portfolio extends Component {
                             <SiPrisma name="Prisma"/>
                             <SiChartdotjs name="Chart JS" />
                             <BsStripe name="Stripe" size={".9em"}/>
-                        </Card>
+                        </Card> */}
 
                         <Card
                             src="images/Portfolio/Translation app dark.png"
