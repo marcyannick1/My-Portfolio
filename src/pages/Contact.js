@@ -6,6 +6,10 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Map from "../components/Contact/Map";
 import { TextAnimate } from "../components/Home/TextAnimate";
+import ContainerAnimate, {
+    item,
+} from "../components/Portfolio/ContainerAnimate";
+import { motion } from "framer-motion";
 
 class Contact extends Component {
     componentDidMount() {
@@ -35,29 +39,38 @@ class Contact extends Component {
                     <div className="container">
                         <Form />
                         <Map />
-                        <div className="info">
-                            <h3>
-                                Marc Yannick COULIBALY
-                                <br />
-                                <span>
-                                    Etudiant à l'Institut F2i à Vincennes
-                                </span>
-                            </h3>
-                            <span>Asnières-sur-Seine, île-de-France</span>
-                            <a
-                                href="mailto:yannickcoulibaly220@gmail.com"
-                                className="mouseover"
-                            >
-                                yannickcoulibaly220@gmail.com
-                            </a>
-                            <a
-                                href="tel:+33 6 62 09 89 74"
-                                className="mouseover"
-                            >
-                                +33 6 62 09 89 74
-                            </a>
-                            <Social />
-                        </div>
+                        <ContainerAnimate
+                            delayChildren={.8}
+                            staggerChildren={0.1}
+                            className="info"
+                        >
+                            <motion.div variants={item}>
+                                <h3>
+                                    Marc Yannick COULIBALY
+                                    <br />
+                                    <span>
+                                        Etudiant à l'Institut F2i à Vincennes
+                                    </span>
+                                </h3>
+                            </motion.div>
+                            <motion.div variants={item}>
+                                <span>Asnières-sur-Seine, île-de-France</span>
+                                <a
+                                    href="mailto:yannickcoulibaly220@gmail.com"
+                                    className="mouseover"
+                                >
+                                    yannickcoulibaly220@gmail.com
+                                </a>
+                                <a
+                                    href="tel:+33 6 62 09 89 74"
+                                    className="mouseover"
+                                >
+                                    +33 6 62 09 89 74
+                                </a>
+
+                                <Social />
+                            </motion.div>
+                        </ContainerAnimate>
                     </div>
                 </main>
                 <Footer />
