@@ -10,6 +10,7 @@ class Home extends Component {
         top: 0,
         left: 0,
         stickers: Math.floor(Math.random() * 10),
+        hide : true,
     };
     componentDidMount() {
         document.addEventListener("mousemove", this.position);
@@ -26,12 +27,15 @@ class Home extends Component {
         stickers.style.right = this.state.left / 60 + "px";
     };
     render() {
+        setTimeout(() => this.setState({hide : false}), 300);
+
         return (
             <>
                 <Nav />
                 <main id="home">
                     <div>
-                        <motion.div
+                    
+                    {!this.state.hide &&   <><motion.div
                             initial={{ opacity: 1 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -60,17 +64,16 @@ class Home extends Component {
                                         visible: (i) => ({
                                             y: 0,
                                             transition: {
-                                                delay: i * 0.1 ,
+                                                delay: i * 0.1,
                                             },
                                         }),
                                     }}
                                 >
                                     Je suis Marc Yannick, étudiant en
-                                    <span style={{color : "#0edabf"}}>BTS SIO SLAM</span>
+                                    <span style={{ color: "#0edabf" }}>BTS SIO SLAM</span>
                                 </TextAnimate>
                             </h1>
-                        </motion.div>
-                        <Social />
+                        </motion.div><Social /></>}
                     </div>
                     <div
                         className="stickers"
