@@ -13,10 +13,13 @@ import {
     SiChartdotjs,
     SiLeaflet,
     SiJavascript,
+    SiNextdotjs,
+    SiPrisma
 } from "react-icons/si";
-import { motion } from "framer-motion";
+import { BsStripe } from "react-icons/bs";
 import * as ModalsContent from "../components/Portfolio/Modal contents/modalsContent";
 import { TextAnimate } from "../components/Home/TextAnimate";
+import ContainerAnimate from "../components/Portfolio/ContainerAnimate";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -24,17 +27,6 @@ class Portfolio extends Component {
     }
 
     render() {
-        const container = {
-            hidden: { opacity: 1, scale: 0 },
-            visible: {
-                opacity: 1,
-                scale: 1,
-                transition: {
-                    delayChildren: .4,
-                    staggerChildren: .2,
-                },
-            },
-        };
         return (
             <>
                 <Nav />
@@ -55,12 +47,20 @@ class Portfolio extends Component {
                             Mon Portfolio
                         </TextAnimate>
                     </h2>
-                    <motion.div
-                        className="container"
-                        variants={container}
-                        initial="hidden"
-                        animate="visible"
-                    >
+                    <ContainerAnimate delayChildren={.4} staggerChildren={.2} className="container">
+                        <Card
+                            src="images/Portfolio/CryptoPay.png"
+                            title="Crypto Pay"
+                            link="https://github.com/marcyannick1/Translation-App"
+                        >
+                            <SiNextdotjs name="Next JS" />
+                            <SiTypescript name="Typescript" size={".9em"} />
+                            <SiChakraui name="Chakra UI" size={".9em"} />
+                            <SiPrisma name="Prisma"/>
+                            <SiChartdotjs name="Chart JS" />
+                            <BsStripe name="Stripe" size={".9em"}/>
+                        </Card>
+
                         <Card
                             src="images/Portfolio/Translation app dark.png"
                             title="Translation App"
@@ -144,7 +144,7 @@ class Portfolio extends Component {
                             <SiTailwindcss name="TailwindCSS" />
                             <SiLeaflet name="Leaflet JS" size={".8em"} />
                         </Card>
-                    </motion.div>
+                    </ContainerAnimate>
                 </main>
             </>
         );
