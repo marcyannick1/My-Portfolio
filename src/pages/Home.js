@@ -9,8 +9,8 @@ class Home extends Component {
     state = {
         top: 0,
         left: 0,
-        stickers: Math.floor(Math.random() * 10),
-        hide : true,
+        stickers: Math.floor(Math.random() * 10 + 1),
+        hide: true,
     };
     componentDidMount() {
         document.addEventListener("mousemove", this.position);
@@ -27,57 +27,61 @@ class Home extends Component {
         stickers.style.right = this.state.left / 60 + "px";
     };
     render() {
-        setTimeout(() => this.setState({hide : false}), 300);
+        setTimeout(() => this.setState({ hide: false }), 300);
 
         return (
             <>
                 <Nav />
                 <main id="home">
                     <div>
-                    
-                    {!this.state.hide &&   <><motion.div
-                            initial={{ opacity: 1 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                        >
-                            <h1>
-                                <TextAnimate
-                                    initial={{ y: "100%" }}
-                                    animate="visible"
-                                    variants={{
-                                        visible: (i) => ({
-                                            y: 0,
-                                            transition: {
-                                                delay: i * 0.3,
-                                            },
-                                        }),
-                                    }}
-                                    ownStyle={{ fontSize: ".7em" }}
+                        {!this.state.hide && (
+                            <>
+                                <motion.div
+                                    initial={{ opacity: 1 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
                                 >
-                                    Bienvenue ! 👋
-                                </TextAnimate>
-                                <br />
-                                <TextAnimate
-                                    initial={{ y: "100%" }}
-                                    animate="visible"
-                                    variants={{
-                                        visible: (i) => ({
-                                            y: 0,
-                                            transition: {
-                                                delay: i * 0.1,
-                                            },
-                                        }),
-                                    }}
-                                >
-                                    Je suis Marc Yannick, étudiant en
-                                    <span style={{ color: "#0edabf" }}>BTS SIO SLAM</span>
-                                </TextAnimate>
-                            </h1>
-                        </motion.div><Social /></>}
+                                    <h1>
+                                        <TextAnimate
+                                            initial={{ y: "100%" }}
+                                            animate="visible"
+                                            variants={{
+                                                visible: (i) => ({
+                                                    y: 0,
+                                                    transition: {
+                                                        delay: i * 0.3,
+                                                    },
+                                                }),
+                                            }}
+                                            ownStyle={{ fontSize: ".7em" }}
+                                        >
+                                            Bienvenue ! 👋
+                                        </TextAnimate>
+                                        <br />
+                                        <TextAnimate
+                                            initial={{ y: "100%" }}
+                                            animate="visible"
+                                            variants={{
+                                                visible: (i) => ({
+                                                    y: 0,
+                                                    transition: {
+                                                        delay: i * 0.1,
+                                                    },
+                                                }),
+                                            }}
+                                        >
+                                            Je suis Marc Yannick, étudiant en
+                                            <span style={{ color: "#0edabf" }}>
+                                                BTS SIO SLAM
+                                            </span>
+                                        </TextAnimate>
+                                    </h1>
+                                </motion.div>
+                                <Social />
+                            </>
+                        )}
                     </div>
-                    <div
-                        className="stickers"
-                    >
+                    <div className="stickers">
                         <motion.img
                             src={
                                 "images/Home/Stickers" +
@@ -85,11 +89,28 @@ class Home extends Component {
                                 ".png"
                             }
                             alt="Bitmoji Stickers"
-                            initial={{ opacity : 0}}
-                            animate={{ opacity : 1 }}
-                            transition={{ duration: .8}}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.8 }}
                         />
                     </div>
+                    <motion.div
+                        animate={{
+                            y: -10,
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeIn",
+                            repeat: Infinity,
+                            repeatType: "reverse",
+                        }}
+                        style={{
+                            width: 50,
+                            height: 50,
+                            backgroundColor: "red",
+                            position: "relative",
+                        }}
+                    />
                 </main>
             </>
         );

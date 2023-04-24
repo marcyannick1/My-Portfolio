@@ -1,0 +1,55 @@
+@import url(./variables.scss);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        width: 100px;
+
+        path {
+            fill: transparent;
+            stroke: $color3;
+            stroke-width: 10em;
+            stroke-dasharray: 116000;
+            stroke-dashoffset: 0;
+            animation: animatesvg 3s linear forwards;
+        }
+    }
+}
+
+@keyframes animatesvg {
+    0% {
+        stroke-dashoffset: 115000;
+    }
+    40% {
+        stroke-dashoffset: 174000;
+    }
+    80% {
+        stroke-dashoffset: 232000;
+        fill: transparent;
+    }
+    90% {
+        fill: $color3;
+    }
+    100% {
+        stroke-dashoffset: 232000;
+        fill: $color3;
+    }
+}
