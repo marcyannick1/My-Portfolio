@@ -94,23 +94,6 @@ class Home extends Component {
                             transition={{ duration: 0.8 }}
                         />
                     </div>
-                    <motion.div
-                        animate={{
-                            y: -10,
-                        }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeIn",
-                            repeat: Infinity,
-                            repeatType: "reverse",
-                        }}
-                        style={{
-                            width: 50,
-                            height: 50,
-                            backgroundColor: "red",
-                            position: "relative",
-                        }}
-                    />
                 </main>
             </>
         );

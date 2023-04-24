@@ -1,14 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
+import "../styles/Loader.scss";
+import { TextAnimate } from "./Home/TextAnimate";
 
 export default function Loader() {
     return (
-        <div class="container">
+        <div class="loader-container">
             <div class="icon">
-                <svg
+                <motion.svg
                     version="1.0"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 2000.000000 2000.000000"
                     preserveAspectRatio="xMidYMid meet"
+                    animate={{
+                        y: -10,
+                    }}
+                    transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                        delay : 1
+                    }}
                 >
                     <g
                         transform="translate(0.000000,2000.000000) scale(0.100000,-0.100000)"
@@ -62,8 +75,9 @@ export default function Loader() {
     -167z"
                         />
                     </g>
-                </svg>
+                </motion.svg>
             </div>
+            <TextAnimate ownStyle={{color : "white", fontSize : "1.2em"}}>Chargement...</TextAnimate>
         </div>
     );
 }

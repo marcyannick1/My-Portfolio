@@ -1,27 +1,18 @@
-@import url(./variables.scss);
+@import "variables.scss";
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
+.loader-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f8f8f8;
-}
-
-.container {
-    position: relative;
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #272727;
     .icon {
-        width: 100px;
+        width: 80px;
 
         path {
             fill: transparent;
@@ -29,7 +20,7 @@ body {
             stroke-width: 10em;
             stroke-dasharray: 116000;
             stroke-dashoffset: 0;
-            animation: animatesvg 3s linear forwards;
+            animation: animatesvg 1.8s linear forwards;
         }
     }
 }

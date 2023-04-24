@@ -1,9 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export function TextAnimate({ children, ownStyle, delay, ...rest }) {
-
-
+export function TextAnimate({ children, ownStyle, ...rest }) {
     const style = { display: "inline-block", overflow: "hidden" };
     const style2 = { display: "inline-block", willChange: "transform" };
 
