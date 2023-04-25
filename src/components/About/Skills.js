@@ -10,6 +10,7 @@ import {
     SiPrisma,
     SiChakraui
 } from "react-icons/si";
+import { BsGit, BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { item } from "../Portfolio/ContainerAnimate";
 
@@ -33,6 +34,8 @@ const Skills = () => {
             <SiNextdotjs size={".9em"}/>
             <SiChakraui size={".9em"}/>
             <SiPrisma size={".9em"}/>
+            <BsGit />
+            <BsGithub size={".9em"}/>
         </motion.div>
     );
 };
