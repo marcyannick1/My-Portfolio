@@ -91,7 +91,7 @@ class Home extends Component {
                             alt="Bitmoji Stickers"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 0.8 }}
+                            transition={{ duration: 1 }}
                         />
                     </div>
                 </main>

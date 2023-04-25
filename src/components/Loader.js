@@ -20,7 +20,7 @@ export default function Loader() {
                         ease: "easeInOut",
                         repeat: Infinity,
                         repeatType: "reverse",
-                        delay : 1
+                        delay: 1,
                     }}
                 >
                     <g
@@ -77,7 +77,21 @@ export default function Loader() {
                     </g>
                 </motion.svg>
             </div>
-            <TextAnimate ownStyle={{color : "white", fontSize : "1.2em"}}>Chargement...</TextAnimate>
+            <TextAnimate
+                ownStyle={{ color: "white", fontSize: "1.1em" }}
+                initial={{ y: "100%" }}
+                animate="visible"
+                variants={{
+                    visible: (i) => ({
+                        y: 0,
+                        transition: {
+                            delay: i * 0.1,
+                        },
+                    }),
+                }}
+            >
+                Chargement...
+            </TextAnimate>
         </div>
     );
 }
