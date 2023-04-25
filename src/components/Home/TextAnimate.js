@@ -9,8 +9,6 @@ export function TextAnimate({ children, ownStyle, ...rest }) {
 
     let words = [];
 
-    console.log(child);
-
     for (const letter of child) {
         if (typeof letter == "string") {
             words = letter.split(" ").map((word) => {
