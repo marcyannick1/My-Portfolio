@@ -16,10 +16,10 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        window.addEventListener("load", () => {
+        // window.addEventListener("load", () => {
             setTimeout(() => setLoading(false), 4000);
-        });
-    }, []);
+        // });
+    });
     return (
         <div className="App">
             <Mouse />
