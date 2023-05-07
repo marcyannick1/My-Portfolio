@@ -94,7 +94,7 @@ class Nav extends Component {
                         <NavLink to="/Veilles">
                             <li className="mouseover">
                                 <i class="fa-solid fa-clock"></i>
-                                Veilles Technos
+                                Veilles
                             </li>
                         </NavLink>
                         <NavLink to="/Contact">
