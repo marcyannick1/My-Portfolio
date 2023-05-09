@@ -43,6 +43,7 @@ class Card extends Component {
                         title={this.props.title}
                         src={this.props.src}
                         link={this.props.link}
+                        githubLink={this.props.githubLink}
                         technos={icons}
                         description={this.props.description}
                         contributors={this.props.contributors}

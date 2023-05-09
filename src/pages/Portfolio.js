@@ -51,6 +51,8 @@ class Portfolio extends Component {
                         <Card
                             src="images/Portfolio/CryptoPay.png"
                             title="Crypto Pay"
+                            description={ModalsContent.cryptoPay.description}
+                            contributors={ModalsContent.cryptoPay.contributors}
                         >
                             <SiNextdotjs name="Next JS" />
                             <SiTypescript name="Typescript" size={".9em"} />
@@ -63,7 +65,9 @@ class Portfolio extends Component {
                         <Card
                             src="images/Portfolio/Translation app dark.png"
                             title="Translation App"
-                            link="https://github.com/marcyannick1/Translation-App"
+                            githubLink="https://github.com/marcyannick1/Translation-App"
+                            description={ModalsContent.translationApp.description}
+                            contributors={ModalsContent.translationApp.contributors}
                         >
                             <FaReact name="React JS" />
                             <SiVite name="Vite JS" size={".9em"} />
@@ -75,6 +79,7 @@ class Portfolio extends Component {
                             src="images/Portfolio/weather-app.jpg"
                             title="Weather App"
                             link="https://weather-app.infinityfreeapp.com"
+                            githubLink="https://github.com/marcyannick1/Weather-App"
                             description={ModalsContent.weatherApp.description}
                             contributors={ModalsContent.weatherApp.contributors}
                         >
@@ -87,7 +92,8 @@ class Portfolio extends Component {
 
                         <Card
                             src="images/Portfolio/Leboncoin.png"
-                            title="Leboncoin"
+                            title="Leboncoin Clone"
+                            githubLink="https://github.com/marcyannick1/Leboncoin-Clone"
                             description={ModalsContent.leboncoin.description}
                             contributors={ModalsContent.leboncoin.contributors}
                         >
@@ -101,6 +107,9 @@ class Portfolio extends Component {
                             src="images/Portfolio/EnglishDictionary.jpg"
                             title="English Dictionary"
                             link="https://marcyannick1.github.io/English-Dictionary/"
+                            githubLink="https://github.com/marcyannick1/English-Dictionary"
+                            description={ModalsContent.englishDictionary.description}
+                            contributors={ModalsContent.englishDictionary.contributors}
                         >
                             <DiHtml5 name="HTML" />
                             <DiCss3Full name="CSS" />
@@ -111,6 +120,9 @@ class Portfolio extends Component {
                             src="images/Portfolio/RockPaperScisors.jpg"
                             title="Rock Paper Scisors"
                             link="https://marcyannick1.github.io/Rock-Paper-Scissors/"
+                            githubLink="https://github.com/marcyannick1/Rock-Paper-Scissors"
+                            description={ModalsContent.rockPaperScisors.description}
+                            contributors={ModalsContent.rockPaperScisors.contributors}
                         >
                             <DiHtml5 name="HTML" />
                             <DiCss3Full name="CSS" />
@@ -121,6 +133,9 @@ class Portfolio extends Component {
                             src="images/Portfolio/YelpCamp.jpg"
                             title="YelpCamp"
                             link="https://marcyannick1.github.io/YelpCamp-Codewell-Challenge/"
+                            githubLink="https://github.com/marcyannick1/YelpCamp-Codewell-Challenge"
+                            description={ModalsContent.yelpCamp.description}
+                            contributors={ModalsContent.yelpCamp.contributors}
                         >
                             <DiHtml5 name="HTML" />
                             <DiCss3Full name="CSS" />
@@ -131,6 +146,9 @@ class Portfolio extends Component {
                             src="images/Portfolio/Huddle.jpg"
                             title="Huddle Landing Page"
                             link="https://marcyannick1.github.io/Huddle-Landing-Page-FrontEndMentor-Challenge/"
+                            githubLink="https://github.com/marcyannick1/Huddle-Landing-Page-FrontEndMentor-Challenge"
+                            description={ModalsContent.huddleLandingPage.description}
+                            contributors={ModalsContent.huddleLandingPage.contributors}
                         >
                             <DiHtml5 name="HTML" />
                             <DiCss3Full name="CSS" />
@@ -140,6 +158,8 @@ class Portfolio extends Component {
                             src="images/Portfolio/ChatRoom.jpg"
                             title="ChatRoom"
                             link="https://spiritistic-flake.000webhostapp.com/"
+                            description={ModalsContent.chatroom.description}
+                            contributors={ModalsContent.chatroom.contributors}
                         >
                             <FaPhp name="PHP" />
                             <DiCss3Full name="CSS" />
@@ -149,6 +169,9 @@ class Portfolio extends Component {
                         <Card
                             src="images/Portfolio/Portfolio.jpg"
                             title="Mon Portfolio"
+                            githubLink="https://github.com/marcyannick1/My-Portfolio"
+                            description={ModalsContent.monPortfolio.description}
+                            contributors={ModalsContent.monPortfolio.contributors}
                         >
                             <FaReact name="React JS" />
                             <FaSass name="SCSS" />

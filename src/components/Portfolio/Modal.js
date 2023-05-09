@@ -7,6 +7,7 @@ function Modal({
     title,
     src,
     link,
+    githubLink,
     technos,
     description,
     contributors,
@@ -97,7 +98,7 @@ function Modal({
                                 }}
                             >
                                 <div>
-                                    <span>Contributeurs:</span>
+                                    <span>Contributeur(s):</span>
                                     {contributors}
                                 </div>
                                 <div className="modal-tech">
@@ -113,6 +114,17 @@ function Modal({
                                         style={{ color: "#0edabf" }}
                                     >
                                         Voir le site
+                                    </a>
+                                )}
+                                {githubLink && (
+                                    <a
+                                        href={githubLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="mouseover"
+                                        style={{ color: "#0edabf" }}
+                                    >
+                                        Lien GitHub
                                     </a>
                                 )}
                             </div>

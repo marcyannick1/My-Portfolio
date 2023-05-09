@@ -99,3 +99,12 @@ export const translationApp = {
         </>
     ),
 };
+export const cryptoPay = {
+    description: <p>Hello World</p>,
+    contributors: (
+        <>
+            <p style={textStyle}>Allan Busi</p>
+            <p style={textStyle}>Marc Yannick Coulibaly</p>
+        </>
+    ),
+};
