@@ -48,6 +48,17 @@ export const englishDictionary = {
         </>
     ),
 };
+export const leboncoin = {
+    description: <p>Hello World</p>,
+    contributors: (
+        <>
+            <p style={textStyle}>Marc Yannick Coulibaly</p>
+            <p style={textStyle}>Rufus Mouakassa</p>
+            <p style={textStyle}>Galdy Diazinga</p>
+            <p style={textStyle}>Emmanuelle Moungala</p>
+        </>
+    ),
+};
 export const weatherApp = {
     description: (
         <>
