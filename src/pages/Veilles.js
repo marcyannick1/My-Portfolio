@@ -36,7 +36,6 @@ class Veilles extends Component {
                         <ContainerAnimate
                             delayChildren={0.3}
                             staggerChildren={0.1}
-                            style={{ maxWidth: 900 }}
                         >
                             <motion.h2
                                 variants={item}
@@ -46,7 +45,7 @@ class Veilles extends Component {
                             </motion.h2>
                             <motion.p
                                 variants={item}
-                                style={{ fontSize: "1.2em", paddingBottom: 10 }}
+                                style={{ fontSize: "1.2em", paddingBottom: 10, maxWidth : 900 }}
                             >
                                 Les avancées technologiques ont un impact
                                 considérable sur notre quotidien et notre
@@ -90,13 +89,13 @@ class Veilles extends Component {
                             >
                                 Collections Pearltrees
                             </motion.h2>
-                            <motion.div variants={item} style={{ display: "flex", gap : 20 }}>
+                            <motion.div variants={item} style={{ display: "flex", gap : 20, flexWrap : "wrap" }}>
                                 <div>
                                     <iframe
                                         title="rgpd"
                                         src="https://www.pearltrees.com/marcyannik/veille-juridique-rgpd/id61401913?embed=2&d=202305041315"
-                                        width="400"
-                                        height="350"
+                                        width="350"
+                                        height="300"
                                         style={{ border: "0px" }}
                                         allowtransparency="true"
                                     ></iframe>
@@ -138,8 +137,8 @@ class Veilles extends Component {
                                     <iframe
                                         title="ia"
                                         src="https://www.pearltrees.com/marcyannik/veille-techno-ia/id60748594?embed=2&d=202305041414"
-                                        width="400"
-                                        height="350"
+                                        width="350"
+                                        height="300"
                                         style={{ border: "0px" }}
                                         allowtransparency="true"
                                     ></iframe>
@@ -154,6 +153,48 @@ class Veilles extends Component {
                                         <a
                                             rel="noreferrer"
                                             href="https://www.pearltrees.com/marcyannik/veille-techno-ia/id60748594"
+                                            style={{
+                                                color: "#818181",
+                                                fontSize: "13px",
+                                            }}
+                                            target="_blank"
+                                        >
+                                            Veille Techno IA
+                                        </a>
+                                        , par{" "}
+                                        <a
+                                            rel="noreferrer"
+                                            href="https://www.pearltrees.com/marcyannik"
+                                            style={{
+                                                color: "#818181",
+                                                fontSize: "13px",
+                                            }}
+                                            target="_blank"
+                                        >
+                                            marcyannik
+                                        </a>
+                                    </span>
+                                </div>
+                                <div>
+                                    <iframe
+                                        title="moteurs de recherches"
+                                        src="https://www.pearltrees.com/marcyannik/moteurs-de-recherche/id61401993?embed=2&d=202305092346"
+                                        width="350"
+                                        height="300"
+                                        style={{ border: "0px" }}
+                                        allowtransparency="true"
+                                    ></iframe>
+                                    <span
+                                        style={{
+                                            display: "block",
+                                            paddingTop: "2px",
+                                            color: "#818181",
+                                            fontSize: "13px",
+                                        }}
+                                    >
+                                        <a
+                                            rel="noreferrer"
+                                            href="https://www.pearltrees.com/marcyannik/moteurs-de-recherche/id61401993"
                                             style={{
                                                 color: "#818181",
                                                 fontSize: "13px",

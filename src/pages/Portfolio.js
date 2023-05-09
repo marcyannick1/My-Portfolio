@@ -14,7 +14,8 @@ import {
     SiLeaflet,
     SiJavascript,
     SiNextdotjs,
-    SiPrisma
+    SiPrisma,
+    SiSupabase
 } from "react-icons/si";
 import { BsStripe } from "react-icons/bs";
 import * as ModalsContent from "../components/Portfolio/Modal contents/modalsContent";
@@ -57,6 +58,7 @@ class Portfolio extends Component {
                             <SiNextdotjs name="Next JS" />
                             <SiTypescript name="Typescript" size={".9em"} />
                             <SiChakraui name="Chakra UI" size={".9em"} />
+                            <SiSupabase name="Supabase"/>
                             <SiPrisma name="Prisma"/>
                             <SiChartdotjs name="Chart JS" />
                             <BsStripe name="Stripe" size={".9em"}/>

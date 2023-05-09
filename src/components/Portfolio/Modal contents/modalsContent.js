@@ -1,7 +1,6 @@
 const textStyle = { width: "max-content", color: "#d6d6dd" };
 const descTextStyle = { marginBottom: 10 };
 export const monPortfolio = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -9,7 +8,6 @@ export const monPortfolio = {
     ),
 };
 export const chatroom = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -17,7 +15,6 @@ export const chatroom = {
     ),
 };
 export const huddleLandingPage = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -25,7 +22,6 @@ export const huddleLandingPage = {
     ),
 };
 export const yelpCamp = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -33,7 +29,6 @@ export const yelpCamp = {
     ),
 };
 export const rockPaperScisors = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -41,7 +36,6 @@ export const rockPaperScisors = {
     ),
 };
 export const englishDictionary = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -49,7 +43,6 @@ export const englishDictionary = {
     ),
 };
 export const leboncoin = {
-    description: <p>Hello World</p>,
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
