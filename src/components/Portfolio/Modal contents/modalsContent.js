@@ -36,6 +36,37 @@ export const rockPaperScisors = {
     ),
 };
 export const englishDictionary = {
+    description: (
+        <>
+            <p style={descTextStyle}>
+                English Dictionnary est une application web de dictionnaire
+                anglais, réalisée en utilisant HTML, CSS et
+                JavaScript et en utilisant une API gratuite de définition des
+                mots en anglais.
+            </p>
+            <p style={descTextStyle}>
+                Cette application est conçue pour aider les utilisateurs à
+                rechercher rapidement la signification et la définition des mots
+                en anglais. Lorsqu'un utilisateur saisit un mot dans la barre de
+                recherche de l'application, celle-ci interroge l'API de
+                définition des mots pour obtenir la définition correspondante.
+            </p>
+            <p style={descTextStyle}>
+                L'application est conçue pour être simple et conviviale.
+                L'interface utilisateur est claire et facile à comprendre, avec
+                une barre de recherche en haut de la page et les résultats de la
+                recherche affichés en dessous. Les résultats incluent la
+                définition du mot, ainsi que des exemples d'utilisation dans des
+                phrases.
+            </p>
+            <p>
+                Pour améliorer l'expérience utilisateur, j'ai également
+                ajouté des fonctionnalités supplémentaires à l'application. Par
+                exemple, les utilisateurs peuvent cliquer sur un bouton pour
+                écouter la prononciation du mot en anglais.
+            </p>
+        </>
+    ),
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -43,6 +74,48 @@ export const englishDictionary = {
     ),
 };
 export const leboncoin = {
+    description: (
+        <>
+            <p style={descTextStyle}>
+                Leboncoin-Clone est un projet scolaire réalisé avec trois amis
+                de classe, qui consistait à reproduire l'interface et les
+                fonctionnalités principales d'un site web bien connu appelé
+                "Leboncoin". Ce site est une plateforme de petites annonces en
+                ligne, qui permet aux particuliers de poster des annonces pour
+                vendre leurs objets.
+            </p>
+            <p style={descTextStyle}>
+                Pour réaliser ce projet, moi et mes camarades avons travaillé
+                dur pendant plusieurs semaines pour reproduire l'apparence et
+                les fonctionnalités de ce site. Nous avons commencé par étudier
+                l'interface utilisateur de "Leboncoin", en nous concentrant sur
+                la mise en page, les couleurs, les icônes et les boutons.
+            </p>
+            <p style={descTextStyle}>
+                Ensuite, nous avons travaillé sur les fonctionnalités
+                principales de ce site, notamment la possibilité pour les
+                utilisateurs de poster des annonces, de les visualiser et de les
+                trier selon différents critères. Nous avons également ajouté des
+                fonctionnalités pratiques, telles que la possibilité de mettre
+                des annonces en favoris ou d'envoyer un message à un vendeur
+                pour poser des questions sur une annonce en particulier.
+            </p>
+            <p style={descTextStyle}>
+                Pour cela, nous avons utilisé différents outils de développement
+                web tels que HTML, CSS, JavaScript et PHP. Nous avons également
+                mis en place une base de données pour stocker les informations
+                relatives aux annonces et aux utilisateurs.
+            </p>
+            <p>
+                En fin de compte, nous avons réussi à créer une version
+                fonctionnelle et réaliste de "Leboncoin", qui a été très
+                appréciée par nos enseignants et vos camarades de classe. Ce
+                projet nous a permis d'acquérir de nouvelles compétences en
+                développement web et de mieux comprendre le fonctionnement d'un
+                site de petites annonces en ligne.
+            </p>
+        </>
+    ),
     contributors: (
         <>
             <p style={textStyle}>Marc Yannick Coulibaly</p>
@@ -88,24 +161,23 @@ export const translationApp = {
     description: (
         <>
             <p style={descTextStyle}>
-                Translation App est une application
-                web de traduction basée sur l'API de Google Traduction. Elle permet de traduire facilement du texte dans
-                la plupart des langues du monde, le tout avec une interface
-                moderne et conviviale.
+                Translation App est une application web de traduction basée sur
+                l'API de Google Traduction. Elle permet de traduire facilement
+                du texte dans la plupart des langues du monde, le tout avec une
+                interface moderne et conviviale.
             </p>
             <p style={descTextStyle}>
-                Conçue avec React, Chakra UI, Vite JS et TypeScript, Elle offre une expérience utilisateur fluide
-                grâce à ses fonctionnalités de mode dark et de mode light de Chakra UI.
+                Conçue avec React, Chakra UI, Vite JS et TypeScript, Elle offre
+                une expérience utilisateur fluide grâce à ses fonctionnalités de
+                mode dark et de mode light de Chakra UI.
             </p>
             <p style={descTextStyle}>
-                Elle permet facilement de
-                traduire des phrases ou des paragraphes complets dans la langue
-                de votre choix.
+                Elle permet facilement de traduire des phrases ou des
+                paragraphes complets dans la langue de votre choix.
             </p>
             <p>
-                Translation App utilise l'API de Google
-                Traduction, ce qui garantit une qualité de traduction élevée et
-                précise.
+                Translation App utilise l'API de Google Traduction, ce qui
+                garantit une qualité de traduction élevée et précise.
             </p>
         </>
     ),
