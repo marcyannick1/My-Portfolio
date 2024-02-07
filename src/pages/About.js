@@ -53,13 +53,11 @@ class About extends Component {
                             className="paragraph"
                         >
                             <motion.p variants={item}>
-                                Je suis Coulibaly Hamed Marc Yannick âgé de 19
-                                ans et actuellement en BTS SIO SLAM, je suis
-                                passionné par tout ce qui est technologies web,
-                                graphisme... <br />
-                                Après l'obtention de mon BTS j'envisage de
-                                poursuivre mes études en Licence pro mention
-                                métiers de l'informatique : applications web.
+                                Je suis Coulibaly Hamed Marc Yannick âgé de 20
+                                ans et actuellement en Bachelor Développeur
+                                Full Stack & DevOps à l'IPSSI, je suis passionné par tout
+                                ce qui est technologies web, graphisme... <br />
+                                Je suis titulaire d'un BTS SIO SLAM & d'un BAC Pro en Electronique.
                             </motion.p>
                             <motion.p variants={item}>
                                 Je me qualifie en tant que polyvalent, dans le
@@ -91,9 +89,9 @@ class About extends Component {
                             alt="Bitmoji Stickers"
                             className="stickers stickersSmiley mouseover"
                             onMouseEnter={stickersHidden}
-                            initial = {{y: 20, opacity: 0}}
-                            animate = {{y: 0, opacity: 1}}
-                            transition={{delay : .4}}
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.4 }}
                         />
                         <img
                             src="images/Stickers 3.png"

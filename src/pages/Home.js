@@ -70,9 +70,9 @@ class Home extends Component {
                                                 }),
                                             }}
                                         >
-                                            Je suis Marc Yannick, étudiant en
+                                            Je suis Yannick COULIBALY,
                                             <span style={{ color: "#0edabf" }}>
-                                                BTS SIO SLAM
+                                                Etudiant en Bachelor Dev Full Stack
                                             </span>
                                         </TextAnimate>
                                     </h1>

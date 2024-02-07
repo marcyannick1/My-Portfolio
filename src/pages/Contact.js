@@ -49,7 +49,7 @@ class Contact extends Component {
                                     Marc Yannick COULIBALY
                                     <br />
                                     <span>
-                                        Etudiant à l'Institut F2i à Vincennes
+                                        Etudiant à l'IPSSI Paris
                                     </span>
                                 </h3>
                             </motion.div>
