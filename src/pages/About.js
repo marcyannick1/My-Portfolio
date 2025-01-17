@@ -53,25 +53,18 @@ class About extends Component {
                             className="paragraph"
                         >
                             <motion.p variants={item}>
-                                Je suis Coulibaly Hamed Marc Yannick âgé de 20
-                                ans et actuellement en Bachelor Développeur
-                                Full Stack & DevOps à l'IPSSI, je suis passionné par tout
-                                ce qui est technologies web, graphisme... <br />
-                                Je suis titulaire d'un BTS SIO SLAM & d'un BAC Pro en Electronique.
+                                Bienvenue sur mon portfolio !<br/><br/>
+                                Je m'appelle Yannick Coulibaly, et je suis etudiant & développeur web passionné basé à Paris.
                             </motion.p>
                             <motion.p variants={item}>
-                                Je me qualifie en tant que polyvalent, dans le
-                                sens où j'aime toucher un peu à tout découvrir
-                                de nouveaux univers de la technologies, motivé
-                                car j'aime me fixer des objectifs et les
-                                atteindre à tout prix.
+                                Fort d’une formation en BTS SIO SLAM & Bachelor Dev Full Stack et DevOps, j’ai développé des compétences solides en React, React Native, Node Js, PHP et bien d'autres. Ces connaissances me permettent de transformer vos idées en applications web dynamiques, intuitives et esthétiques.
                             </motion.p>
                             <motion.p variants={item}>
-                                Je suis actuellement à la recherche d'un contrat
-                                d'alternance pour la rentrée 2022-2023 dans le
-                                but de terminer mes 2 années de BTS en ayant
-                                découvert le monde professionnel, ce qui me
-                                permettra d'acquérir aussi de l'expérience.
+                                Quand je ne suis pas devant mon écran, vous me trouverez probablement devant ma console de jeu ou à écouter de la musique. Ces moments m’inspirent et nourrissent ma créativité.<br/><br/>
+
+                                N’hésitez pas à parcourir mon portfolio pour découvrir mes projets, et si mon profil vous intéresse, je serais ravi de discuter avec vous !
+
+
                             </motion.p>
                             <motion.a
                                 href="CV.pdf"
