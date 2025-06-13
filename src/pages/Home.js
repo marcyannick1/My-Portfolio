@@ -72,7 +72,7 @@ class Home extends Component {
                                         >
                                             Je suis Yannick COULIBALY,
                                             <span style={{ color: "#0edabf" }}>
-                                                Etudiant en Bachelor Dev Full Stack
+                                                Etudiant en Master Dev & IA
                                             </span>
                                         </TextAnimate>
                                     </h1>
